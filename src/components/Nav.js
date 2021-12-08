@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import '/Users/ola/jenga-x/src/components/custom.css';
+import '../components/custom.css';
 
 const NavStyles = styled.nav`
     .nav-top{
