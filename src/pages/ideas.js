@@ -8,17 +8,17 @@ import Information from '../components/Information';
 
 const MainStyles = styled.main`
     width: 100%;
-    height: 2600px;
+    height: 1300px;
     
 `;
 
 function Ideas(){
-    return <main>
+    return <MainStyles>
     <HeaderIdea />
     <ButtonGroup />
     <Information />
     <Footer />
-    </main>
+    </MainStyles>
   }
   
   export default Ideas;

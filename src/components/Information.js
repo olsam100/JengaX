@@ -3,13 +3,14 @@ import styled from "styled-components";
 import { Image } from 'react-bootstrap';
 import imageBadge from '/Users/ola/jenga-x/src/images/image22.svg';
 import VectorStroke from '/Users/ola/jenga-x/src/images/vectorStroke.svg';
+import '/Users/ola/jenga-x/src/components/custom.css';
 
 
 const MainStyles = styled.main`
     padding-top: 60px;
     width: 67%;
     margin: 0 auto;
-    height: 1450px;
+    height: 1440px;
 
     .group217{
         display: grid;

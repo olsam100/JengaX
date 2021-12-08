@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
+import '/Users/ola/jenga-x/src/components/custom.css';
 
 const NavStyles = styled.nav`
     .nav-top{
@@ -32,6 +33,7 @@ const NavStyles = styled.nav`
     }
     a{
         text-decoration: none;
+        display: inline-block;
     }
 
     button{
@@ -64,6 +66,10 @@ const NavStyles = styled.nav`
     
 `;
 
+const activeStyle = {
+    borderBottom: '3px solid #03060B'
+}
+
 
 
 function Nav(){
@@ -73,13 +79,13 @@ function Nav(){
             <div className="menu">
                 <ul>
                     <li>
-                        <Link to="/">Home</Link>
+                        <Link to="/" activeStyle={activeStyle} >Home</Link>
                     </li>
                     <li>
-                        <Link to="/venture">Venture</Link>
+                        <Link to="/venture" className="link" activeStyle={activeStyle}>Venture</Link>
                     </li>
                     <li>
-                        <Link to="/ideas">Ideas</Link>
+                        <Link to="/ideas" className="link" activeStyle={activeStyle}>Ideas</Link>
                     </li>
                     <li>
                         <button type="button" className="myButton">Get in touch
