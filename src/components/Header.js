@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import Nav from "./Nav";
-import backgroundImage from '/Users/ola/jenga-x/src/images/image1.svg';
 import {Image} from 'react-bootstrap';
+import backgroundImage from '../images/image1.svg';
 
 
 const HeaderStyles = styled.header`

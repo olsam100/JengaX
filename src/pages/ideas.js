@@ -2,7 +2,7 @@ import React from 'react';
 import HeaderIdea from '../components/HeaderIdea';
 import styled from 'styled-components';
 import Footer from '../components/Footer';
-import ButtonGroup from '/Users/ola/jenga-x/src/components/ButtonGroup.js'
+import ButtonGroup from '../components/ButtonGroup';
 import Information from '../components/Information';
 
 

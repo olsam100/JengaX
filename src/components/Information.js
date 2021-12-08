@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import { Image } from 'react-bootstrap';
-import imageBadge from '/Users/ola/jenga-x/src/images/image22.svg';
-import VectorStroke from '/Users/ola/jenga-x/src/images/vectorStroke.svg';
-import '/Users/ola/jenga-x/src/components/custom.css';
+import imageBadge from '../images/image22.svg';
+import VectorStroke from '../images/vectorStroke.svg';
+import '../components/custom.css';
 
 
 const MainStyles = styled.main`
