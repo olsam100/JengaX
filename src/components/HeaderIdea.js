@@ -4,7 +4,7 @@ import GlobalStyles from "../styles/GlobalStyles";
 import Nav from "./Nav";
 
 const HeaderIdeaStyles = styled.header`
-    height: 716px;
+    height: 616px;
     width: 100%;
     background-image: linear-gradient(#B2D9FB, #ffffff);
     display: flex;
@@ -12,6 +12,7 @@ const HeaderIdeaStyles = styled.header`
 
 .header-items{
     display: flex;
+    flex-direction: column;
     padding-top: 120px;
 }
 .group216{
@@ -96,8 +97,10 @@ function HeaderIdea(){
                             <button className="btn">Subscribe</button>
                         </div>
                     </div>
-                   
                 </div>
+
+
+
                 
            
         

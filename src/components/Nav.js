@@ -48,6 +48,19 @@ const NavStyles = styled.nav`
         padding-left: 8px;
         padding-top: 2px;
     }
+    .myButton{
+        border-radius: 100px;
+        width: 142px;
+        height: 33px;
+        background-color: #11253E;
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 600;
+        font-family: 'Graphik';
+        border-color: #11253e;
+        border-image: none;
+        cursor: pointer;
+    }
     
 `;
 
@@ -69,7 +82,7 @@ function Nav(){
                         <Link to="/ideas">Ideas</Link>
                     </li>
                     <li>
-                        <button type="button">Get in touch
+                        <button type="button" className="myButton">Get in touch
                         <span>
                             <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <   path fill-rule="evenodd" clip-rule="evenodd" d="M3.29289 5.49995L0 2.20706L1.41421 0.792847L6.12132 5.49995L1.41421 10.2071L0 8.79285L3.29289 5.49995Z" fill="white"/>
