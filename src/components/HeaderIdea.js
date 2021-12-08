@@ -68,7 +68,7 @@ input[type="email"]::placeholder{
     font-weight: 400;
     font-family: 'Graphik';
 }
-button{
+.btn{
     width: 147px;
     height: 56px;
     border-radius: 6px;
@@ -93,7 +93,7 @@ function HeaderIdea(){
                         <p className="subscribe">Subscribe to our newsletter to get new content as they drop</p>
                         <div className="group193">
                             <input type="email" placeholder="Enter your email"/>
-                            <button>Subscribe</button>
+                            <button className="btn">Subscribe</button>
                         </div>
                     </div>
                    
