@@ -1,23 +1,34 @@
 @font-face {
     font-family: 'Graphik';
-    src: url('/Users/ola/jenga-x/src/fonts/Graphik-Bold.ttf');
+    src: url('../fonts/Graphik-Bold.ttf');
     font-weight: 700;
 }
 
 @font-face {
     font-family: 'Graphik';
-    src: url('/Users/ola/jenga-x/src/fonts/Graphik-Medium.ttf');
+    src: url('../fonts/Graphik-Medium.ttf');
     font-weight: 500;
 }
 
 @font-face {
     font-family: 'Graphik';
-    src: url('/Users/ola/jenga-x/src/fonts/Graphik-Regular.ttf');
+    src: url('../fonts/Graphik-Regular.ttf');
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'Graphik';
-    src: url('/Users/ola/jenga-x/src/fonts/Graphik-Semibold.ttf');
+    src: url('../fonts/Graphik-Semibold.ttf');
     font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Bc Kakao';
+    src: url('../fonts/BCKakaoBlRegular.woff2.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Bc Kakao';
+    src: url('../fonts/BCKakaoBl.woff2\ .ttf');
 }

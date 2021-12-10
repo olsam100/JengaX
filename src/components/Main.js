@@ -6,6 +6,9 @@ const MainStyles = styled.main`
     /* height: 1374px; */
     height: 1300px;
     padding-top: 29px;
+    @media (min-width: 320px) and (max-width: 480px){
+        padding-top: 0px;
+    }
     section{
         display: grid;
         width: 86%;
@@ -14,10 +17,26 @@ const MainStyles = styled.main`
         grid-template-columns: 347px auto;
         grid-gap: 72.15px;
     }
+    @media (min-width: 320px) and (max-width: 480px){
+        section{
+            width: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            /* height: 700px; */
+            height: auto;
+        }   
+    }
     .share-collection{
         display: grid;
         grid-template-rows: repeat(2, 165px);
         grid-row-gap: 50px;
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        .share-collection{
+            display: flex;
+            flex-direction: column;
+        }
     }
     
     .idea-text{
@@ -29,7 +48,12 @@ const MainStyles = styled.main`
         line-height: 100px;
         color: #445b78;
     }
-
+@media (min-width: 320px) and (max-width: 480px){
+    .idea-text{
+        padding-left: 30px;
+        line-height: 50px;
+    }
+}
     .share-paraph{
         font-size: 36px;
         letter-spacing: -4%;
@@ -39,6 +63,12 @@ const MainStyles = styled.main`
         padding-left: 0;
         line-height: 50px;
         color: #03060B;
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        .share-paraph{
+            font-size: 24px;
+            line-height: 36px;
+        }   
     }
     .buttonwrapper{
         width: 228.12px;
@@ -69,6 +99,13 @@ const MainStyles = styled.main`
         display: grid;
         grid-template-columns: repeat(3, 241.85px);
         justify-content: space-between;
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        .group{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }   
     }
     .heading1{
         height: 30px;
@@ -160,6 +197,12 @@ const MainStyles = styled.main`
         margin: 60px 107px 0 515px;
         background-color: #5974AA;
     }
+    @media (min-width: 320px) and (max-width: 480px){
+        aside{
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
 
     .group215{
         width: 743px;
@@ -167,6 +210,12 @@ const MainStyles = styled.main`
         padding: 47px 30px 32px 30px;
         display: flex;
         flex-direction: column;
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        .group215{
+            width: 100%;
+            padding: 20px 30px;
+        }   
     }
     .supporting{
         font-size: 16px;
@@ -179,6 +228,11 @@ const MainStyles = styled.main`
         padding-left: 0px;
         padding-right: 85.02px;
     }
+    @media (min-width: 320px) and (max-width: 480px){
+        .supporting{
+            padding-right: 0;
+        }
+    }
     .group211{
         display: flex;
         flex-direction: column;
@@ -188,6 +242,11 @@ const MainStyles = styled.main`
         display: flex;
         justify-content: space-between;
         margin-top: 52px;
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        .email-navigation{
+            width: 100%
+        };
     }
     .emailAddress{
         font-size: 24px;
@@ -204,12 +263,30 @@ const MainStyles = styled.main`
         border: 1px solid rgba(255, 255, 255, 0.5);
         margin-top: 20px;
     }
+    @media (min-width: 320px) and (max-width: 480px){
+        .line2{
+            width: 100%;
+        }
+    }
     .testimonial{
         width: 86%;
         margin: 0 108px 0 96px;
         display: grid;
         grid-template-columns: 347px 804px;
         grid-column-gap: 73px;
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        .testimonial{
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+        }   
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        .share-idea{
+            padding: 0 30px;
+        }
+        
     }
     .text-venture{
         padding-top: 80px;
@@ -221,12 +298,30 @@ const MainStyles = styled.main`
         font-weight: 500;
         line-height: 100px;
     }
+    @media (min-width: 320px) and (max-width: 480px){
+        .text-venture{
+            width: 100%;
+            padding: 0;
+            /* line-height: 30px; */
+            margin-top: 30px;
+        }   
+    }
     .group214{
         display: grid;
         grid-template-columns: repeat(4, 150px);
         grid-template-rows: 150px;
         justify-content: space-between;
         grid-column-gap: 68px;
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        .group214{
+            grid-template-rows: repeat(2, 150px);
+            grid-template-columns: repeat(2, 150px);
+            grid-row-gap: 34px;
+            grid-column-gap: 20px;
+            justify-content: space-evenly;
+            /* margin: 0 auto; */
+        }   
     }
     .rectangle{
         background-color: #C4C4C4;
@@ -326,8 +421,8 @@ function Main(){
         </aside>
 
         <p className="text-venture">Venture</p>
+
         <div className="testimonial">
-            
             <div className="share-idea">
                 <p className="share-paraph">
                 We invest in you to help you scale your business

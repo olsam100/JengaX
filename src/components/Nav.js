@@ -12,6 +12,14 @@ const NavStyles = styled.nav`
         justify-content: space-between;
         margin: 0 auto;
     }
+    @media (min-width: 320px) and (max-width: 480px){
+        .nav-top{
+            padding-top: 30px;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+        }
+    }
     .brandlogo{
         font-size: 48px;
         color: #000000;
@@ -19,8 +27,15 @@ const NavStyles = styled.nav`
         font-weight: 900;
         font-style: normal;
     }
+    
     .menu{
         display: flex;
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        menu{
+            width: 100%;
+            /* justify-content: space-between; */
+        }
     }
     
     ul{
@@ -31,9 +46,11 @@ const NavStyles = styled.nav`
         list-style: none;
         margin-left: 30px;
     }
+    
     a{
         text-decoration: none;
         display: inline-block;
+        font-family: 'Graphik';
     }
 
     button{

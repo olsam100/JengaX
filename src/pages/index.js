@@ -11,6 +11,10 @@ const MainStyles = styled.main`
     flex-direction: column;
     overflow: scroll;
     height: 2090px;
+    @media (min-width: 320px) and (max-width: 480px){
+        /* height: 3000px;  */
+        /* height: auto; */
+      }
 `;
 
 function HomePage(){

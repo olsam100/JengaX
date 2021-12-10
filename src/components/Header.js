@@ -15,11 +15,26 @@ const HeaderStyles = styled.header`
 
 .header-items{
     display: flex;
-    padding-top: 66px;
+    padding-top: 66px;;
+}
+@media (min-width: 320px) and (max-width: 480px){
+    .header-items{
+    flex-direction: column;
+    height: auto;
+    /* height: 500px; */
+    justify-content: space-between;
+    /* padding-top: 20px; */
+    }
 }
 .wordwrapper{
-    width: 660px;
-    height: 278px;
+    width: 38%;
+}
+@media (min-width) and (max-width: 480px){
+    .wordwrapper{
+        width: 480px;
+        height: 150px;
+        display: flex;
+    }
 }
 .capital{
     font-size: 87px;
@@ -30,10 +45,26 @@ const HeaderStyles = styled.header`
     line-height: 100px;
     letter-spacing: -4%;
     padding-left: 108px;
-    width: 660px;
     opacity: 100%;
-    position: absolute;
     z-index: 0.5;
+    width: 850px;
+    padding-top: 104px;
+    justify-content: center;
+    /* text-align: center; */
+}
+@media (min-width: 320px) and (max-width: 480px){
+    .capital{
+        font-size: 36px;
+        line-height: 54px;
+        padding: 0 50px;
+        /* width: 100%; */
+        width: 480px;
+        text-align: center;
+    }
+    img{
+        max-width: 100%;
+        padding-top: 50px;
+    }
 }
 
 `;
@@ -44,7 +75,7 @@ function Header(){
                 <div className="header-items">
                     <div className="wordwrapper"><p className="capital">We're a capital firm designed for a new era.</p></div>
                     <div className="imagebox">
-                    <Image src={backgroundImage} fluid alt="JengaX brand logo"/>
+                         <Image src={backgroundImage} fluid alt="JengaX brand logo"/>
                     </div>
                 </div>
            
