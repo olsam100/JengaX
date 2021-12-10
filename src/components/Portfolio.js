@@ -8,9 +8,9 @@ const PortfolioStyles = styled.article`
     height: 310px;
     padding-bottom: 100px;
     display: grid;
-    grid-template-columns: 150px 696px;
+    grid-template-columns: 170px 696px;
     grid-template-rows: 150px;
-    grid-column-gap: 371px;
+    grid-column-gap: 351px;
     justify-content: space-between;
 
     .left{

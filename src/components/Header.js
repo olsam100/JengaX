@@ -50,7 +50,6 @@ const HeaderStyles = styled.header`
     width: 850px;
     padding-top: 104px;
     justify-content: center;
-    /* text-align: center; */
 }
 @media (min-width: 320px) and (max-width: 480px){
     .capital{

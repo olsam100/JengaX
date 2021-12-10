@@ -68,6 +68,11 @@ const FooterStyles = styled.footer`
         color: #445b78;
         display: flex;
         align-items: center;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        width: 320px;
     }
     span{
         padding-left: 5px;
@@ -79,6 +84,10 @@ const FooterStyles = styled.footer`
         font-weight: 500;
         color: #03060B;
         padding-left: 15px;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
     }
 `;
 

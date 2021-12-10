@@ -1,22 +1,25 @@
 import React from "react";
 import styled from "styled-components";
-// import Footer from "./Footer";
 import Mission from "./Mission";
 import Portfolio from "./Portfolio";
 import Team from "./Team";
 
 const MainVentureStyles = styled.main`
     width: 100%;
-    height: 1700px;
+    padding-top: 50px;
+    height: 1750px;
 
 `;
 
+const styleMission = {
+    paddingTop: 120
+}
+
 function MainVenture(){
     return <MainVentureStyles>
-        <Mission />
+        <Mission style={styleMission}/>
         <Portfolio />
         <Team />
-        {/* <Footer /> */}
     </MainVentureStyles>
 }
 

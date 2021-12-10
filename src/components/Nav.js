@@ -51,6 +51,10 @@ const NavStyles = styled.nav`
         text-decoration: none;
         display: inline-block;
         font-family: 'Graphik';
+        font-weight: 500;
+        font-style: normal;
+        font-size: 15px;
+        color: #03060B;
     }
 
     button{
@@ -62,6 +66,8 @@ const NavStyles = styled.nav`
         font-style: 600;
         font-family: 'Graphik';
         color: #ffffff;
+        border-width: 0px;
+        border-style: unset;
     }
     span{
         padding-left: 8px;
