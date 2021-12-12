@@ -59,11 +59,12 @@ input{
     border-radius: 6px;
     border: 2px rgba(68, 91, 120, 0.05);
     background-color: #ffffff;
-    
-}
-input[type="email"]::placeholder{
+    font-size: 16px;
     color: #445B78;
     padding-left: 15px;
+}
+input::placeholder{
+    color: #445B78;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -98,13 +99,6 @@ function HeaderIdea(){
                         </div>
                     </div>
                 </div>
-
-
-
-                
-           
-        
-       
 
     </HeaderIdeaStyles>
 }
