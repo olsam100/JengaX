@@ -3,10 +3,10 @@ import styled from "styled-components";
 
 const TestimonialStyles = styled.div`
     .testimonial{
-        width: 86%;
         margin: 0 108px 0 96px;
         display: grid;
-        grid-template-columns: 347px 804px;
+        grid-template-columns: 347px auto;
+        /* grid-template-columns: 347px 804px; */
         grid-column-gap: 73px;
     }
     @media (min-width: 320px) and (max-width: 480px){

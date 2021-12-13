@@ -8,9 +8,11 @@ import '../components/custom.css';
 
 const MainStyles = styled.main`
     padding-top: 60px;
-    width: 67%;
+    width: 100%;
     margin: 0 auto;
     height: 1440px;
+    padding-left: 266px;
+    padding-right: 266.56px;
 
     .group217{
         display: grid;

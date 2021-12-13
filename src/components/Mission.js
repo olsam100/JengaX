@@ -2,33 +2,32 @@ import React from "react";
 import styled from "styled-components";
 
 const MissionStyles = styled.section`
-    width: 85%;
     display: grid;
-    grid-template-columns: 1221px;
     grid-template-rows: repeat(3, 120px);
     grid-row-gap: 60px;
     margin: 0 auto;
+    padding: 0 108px;
     
 
     .group2{
-        width: 85%;
+        width: 100%;
         display: grid;
-        grid-template-columns: 247px 707px;
-        grid-column-gap: 267px;
+        grid-template-columns: 35% 65%;
+        justify-content: space-between;
         align-items: center;
     }
     .group3{
-        width: 85%;
+        width: 100%;
         display: grid;
-        grid-template-columns: 208px 707px;
-        grid-column-gap: 306px;
+        grid-template-columns: 35% 65%;
+        justify-content: space-between;
         align-items: center;
     }
     .group4{
-        width: 85%;
+        width: 100%;
         display: grid;
-        grid-template-columns: 410px 707px;
-        grid-column-gap: 100px;
+        grid-template-columns: 35% 65%;
+        justify-content: space-between;
         align-items: center;
     }
     .group1{
@@ -61,7 +60,7 @@ const MissionStyles = styled.section`
     }
     .empty{
         margin-top: 20px;
-        width: 1224px;
+        width: 100%;
         border: 1px solid #2F9BFF;
         opacity: 0.2;
     }

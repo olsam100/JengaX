@@ -12,22 +12,27 @@ const HeaderStyles = styled.header`
     display: flex;
     flex-direction: column;
     position: relative;
+    margin: 0 auto;
+
 
 .header-items{
     display: flex;
-    padding-top: 66px;;
+    padding-top: 66px;
+    justify-content: space-between;
+    position: relative;
 }
 @media (min-width: 320px) and (max-width: 480px){
     .header-items{
     flex-direction: column;
     height: auto;
-    /* height: 500px; */
     justify-content: space-between;
-    /* padding-top: 20px; */
     }
 }
 .wordwrapper{
-    width: 38%;
+    /* width: 38%; */
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 @media (min-width) and (max-width: 480px){
     .wordwrapper{
@@ -44,21 +49,25 @@ const HeaderStyles = styled.header`
     font-family: 'Graphik';
     line-height: 100px;
     letter-spacing: -4%;
-    padding-left: 108px;
     opacity: 100%;
-    z-index: 0.5;
-    width: 850px;
+    z-index: 1;
     padding-top: 104px;
-    justify-content: center;
+    display: block;
+    position: absolute;
+    left: 108px;
+    width: 660px;
+}
+img{
+    z-index: 0;
 }
 @media (min-width: 320px) and (max-width: 480px){
     .capital{
         font-size: 36px;
         line-height: 54px;
         padding: 0 50px;
-        /* width: 100%; */
         width: 480px;
         text-align: center;
+        left: 0;
     }
     img{
         max-width: 100%;
@@ -72,7 +81,10 @@ function Header(){
     return <HeaderStyles>
                 <Nav />
                 <div className="header-items">
-                    <div className="wordwrapper"><p className="capital">We're a capital firm designed for a new era.</p></div>
+                    <div className="wordwrapper">
+                        <p className="capital">We're a capital firm designed for a new era.</p>
+                        {/* <Image src={backgroundImage} fluid alt="JengaX brand logo"/> */}
+                    </div>
                     <div className="imagebox">
                          <Image src={backgroundImage} fluid alt="JengaX brand logo"/>
                     </div>

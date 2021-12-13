@@ -3,17 +3,16 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 const FooterStyles = styled.footer`
-    width: 85%;
     margin: 0 auto;
     padding-bottom: 56px;
+    width: 100%;
+    padding: 0 108px;
     @media (min-width: 320px) and (max-width: 480px){
         width: 100%;
     }
     
     .footer-container{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 364px;
+        display: flex;
         justify-content: space-between;
     }
     @media (min-width: 320px) and (max-width: 480px){

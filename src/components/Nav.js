@@ -5,9 +5,9 @@ import '../components/custom.css';
 
 const NavStyles = styled.nav`
     .nav-top{
-        padding-top: 66px;
+        padding-top: 57px;
         display: flex;
-        width: 85%;
+        /* width: 85%; */
         align-items: center;
         justify-content: space-between;
         margin: 0 auto;
@@ -26,10 +26,12 @@ const NavStyles = styled.nav`
         font-family: 'BC Kakao';
         font-weight: 900;
         font-style: normal;
+        padding-left: 108px
     }
     
     .menu{
         display: flex;
+        padding-right: 109px;
     }
     @media (min-width: 320px) and (max-width: 480px){
         menu{
@@ -54,7 +56,9 @@ const NavStyles = styled.nav`
         font-weight: 500;
         font-style: normal;
         font-size: 15px;
+        padding-bottom: 8px;
         color: #03060B;
+        border-bottom: 3px solid transparent;
     }
 
     button{
@@ -86,11 +90,16 @@ const NavStyles = styled.nav`
         border-image: none;
         cursor: pointer;
     }
+
     
 `;
 
 const activeStyle = {
-    borderBottom: '3px solid #03060B'
+    borderBottom: '3px solid #03060B',
+    // offset: '8px'
+    // paddingBottom: '8px',
+    // outlineOffset: '8px'
+    // height: '92px'
 }
 
 

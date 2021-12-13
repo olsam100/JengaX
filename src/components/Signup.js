@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 const SignupStyles = styled.div`
     aside{
-        width: 819.25px;
         height: 231px;
         margin: 60px 107px 0 515px;
         background-color: #5974AA;
@@ -15,11 +14,11 @@ const SignupStyles = styled.div`
         }
     }
     .group215{
-        width: 743px;
         height: 152px;
         padding: 47px 30px 32px 30px;
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
     @media (min-width: 320px) and (max-width: 480px){
         .group215{
@@ -37,6 +36,7 @@ const SignupStyles = styled.div`
         font-family: 'Graphik';
         padding-left: 0px;
         padding-right: 85.02px;
+        display: flex;
     }
     @media (min-width: 320px) and (max-width: 480px){
         .supporting{
@@ -46,12 +46,14 @@ const SignupStyles = styled.div`
     .group211{
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
     }
     .emailwrapper{
-        width: 743px;
+        width: 100%;
         border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     }
     .email-navigation{
+        width: 100%;
         display: flex;
         justify-content: space-between;
         margin-top: 52px;
@@ -126,7 +128,6 @@ function Signup(){
                         </div>
                     </div>
                     
-                    {/* <div className="line2"></div> */}
                 </div>
             </div>
         </aside>

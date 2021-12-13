@@ -8,8 +8,8 @@ const TeamStyles = styled.aside`
     margin: 0 auto;
 
     .container{
-        width: 71%;
-        margin: 0 auto 0 auto;
+        width: 100%;
+        margin: 0 auto;
         height: 617px;
     }
 
@@ -18,14 +18,16 @@ const TeamStyles = styled.aside`
         flex-direction: column;
         height: 617px;
         /* margin-top: 75px; */
-        
-        padding-top: 75px;
+        padding-left: 228px;
+        padding-right: 190px;
+        /* padding-top: 75px; */
     }
     .meet-group{
         display: flex;
         flex-direction: column;
         text-align: center;
         height: 79px;
+        padding-top: 75px;
     }
     .meet-label{
         font-size: 26px;
@@ -40,14 +42,16 @@ const TeamStyles = styled.aside`
         font-style: normal;
         font-weight: 400;
         font-family: 'Graphik';
+        padding-top: 4px;
     }
     .cards-group{
         height: 498px;
-        width: 1025px;
+        width: 100%;
         display: grid;
-        grid-template-columns: repeat(3, 274px);
-        grid-column-gap: 100px;
+        grid-template-columns: repeat(3, auto);
+        justify-content: space-between;
         padding-top: 40px;
+        margin-top: 40px;
     }
     .card-labels{
         display: flex;

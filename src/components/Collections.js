@@ -4,9 +4,8 @@ import styled from "styled-components";
 const CollectionsStyles = styled.div`
     section{
         display: grid;
-        width: 86%;
         height: 380px;
-        margin: 0 107.15px 0 96px;
+        padding: 0 107.15px 0 96px;
         grid-template-columns: 347px auto;
         grid-gap: 72.15px;
     }
@@ -50,6 +49,7 @@ const CollectionsStyles = styled.div`
     .group{
         display: grid;
         grid-template-columns: repeat(3, 241.85px);
+        /* grid-template-columns: repeat(3, auto); */
         justify-content: space-between;
     }
     @media (min-width: 320px) and (max-width: 480px){
@@ -197,14 +197,14 @@ function Collections(){
                         <div className="heading2">Create</div>
                             <div className="heading-text">
                                 <h3>Building lessons</h3>
-                                <p className="text">The rise of RESFUL APIs has been met by a rise in tools for reating, testing, and mana...</p>
+                                <p className="text">The rise of RESFUL APIs has been met by a rise in tools for reating, testing...</p>
                         </div>
                     </div>
                     <div className="group203">
                         <div className="heading3">Sell</div>
                         <div className="heading-text">
                             <h3>Building your API</h3>
-                            <p className="text">The rise of RESFUL APIs has been met by a rise in tools for reating, testing, and mana...</p>
+                            <p className="text">The rise of RESFUL APIs has been met by a rise in tools for reating, testing, and managing</p>
                         </div>
                     </div>
                 </div>
@@ -220,14 +220,14 @@ function Collections(){
                         <div className="heading4">Create</div>
                         <div className="heading-text">
                             <h3>Building lessons</h3>
-                            <p className="text">The rise of RESFUL APIs has been met by a rise in tools for reating, testing, and mana...</p>
+                            <p className="text">The rise of RESFUL APIs has been met by a rise in tools for reating, testing...</p>
                         </div>
                     </div>
                     <div className="group203">
                         <div className="heading5">Sell</div>
                         <div className="heading-text">
                             <h3>Building your API</h3>
-                            <p className="text">The rise of RESFUL APIs has been met by a rise in tools for reating, testing, and mana...</p>
+                            <p className="text">The rise of RESFUL APIs has been met by a rise in tools for reating, testing, and managing</p>
                         </div>
                     </div>
                 </div>

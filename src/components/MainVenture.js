@@ -7,7 +7,7 @@ import Team from "./Team";
 const MainVentureStyles = styled.main`
     width: 100%;
     padding-top: 50px;
-    height: 1750px;
+    height: 1780px;
 
 `;
 

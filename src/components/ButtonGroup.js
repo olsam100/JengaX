@@ -4,8 +4,12 @@ import styled from 'styled-components';
 const ButtonGroupStyles = styled.div`
     /* padding-top: 80px; */
     padding-left: 266px;
+    width: 100%;
+    /* margin: 0 auto; */
 
-
+    .group111{
+        /* padding-left: 266px; */
+    }
 
     .btn{
         font-style: normal;
