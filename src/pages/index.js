@@ -12,9 +12,8 @@ const MainStyles = styled.main`
     flex-direction: column;
     overflow: scroll;
     height: 2090px;
-    /* margin: 0 108px; */
-    /* padding-left: 108px; */
-   
+    max-width: 1440px;
+    margin: 0 auto;
     @media (min-width: 320px) and (max-width: 480px){
         /* height: 3000px;  */
         /* height: auto; */
