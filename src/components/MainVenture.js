@@ -5,10 +5,11 @@ import Portfolio from "./Portfolio";
 import Team from "./Team";
 
 const MainVentureStyles = styled.main`
+width: 100%;
     padding-top: 50px;
     height: 1908px;
     /* margin: 0 auto; */
-    /* max-width: 1224px; */
+    /* max-width: 1333px; */
 
 `;
 

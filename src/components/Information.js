@@ -8,17 +8,16 @@ import '../components/custom.css';
 
 const MainStyles = styled.main`
     padding-top: 60px;
-    width: 100%;
+    max-width: 907.44px;
     margin: 0 auto;
-    height: 1440px;
-    padding-left: 266px;
-    padding-right: 266.56px;
+    height: 1155px;
+    /* padding-left: 266px; */
 
     .group217{
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: repeat(5, 199px);
-        grid-row-gap: 82px;
+        grid-row-gap: 40px;
     }
 
     .detailedGroup{

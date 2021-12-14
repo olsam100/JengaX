@@ -2,15 +2,14 @@ import React from "react";
 import styled from "styled-components";
 
 const PortfolioStyles = styled.article`
-    max-width: 1224px;
+    max-width: 1333px;
     margin: 0 auto;
     padding-top: 60px;
     height: 310px;
     display: grid;
-    grid-template-columns: 170px 696px;
     grid-template-rows: 150px;
-    grid-column-gap: 351px;
     justify-content: space-between;
+    grid-template-columns: 35% 65%;
 
     .left{
         display: flex;
@@ -29,7 +28,9 @@ const PortfolioStyles = styled.article`
     .boxes{
         display: grid;
         grid-template-columns: repeat(4, 150px);
-        grid-column-gap: 32px;
+        justify-content: space-between;
+
+        
     }
 
     .rectangle{

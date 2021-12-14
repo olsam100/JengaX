@@ -6,7 +6,8 @@ import backgroundImage from '../images/image1.svg';
 
 
 const HeaderStyles = styled.header`
-    height: 707px;
+    /* height: 707px; */
+    /* height: 592px; */
     background-image: linear-gradient(#B2D9FB, #ffffff);
     display: flex;
     flex-direction: column;
@@ -17,6 +18,7 @@ const HeaderStyles = styled.header`
     display: grid;
     grid-template-columns: 442px 922px;
     padding-top: 64px;
+    padding-bottom: 18px;
     margin: 0 auto;
 }
 @media (min-width: 320px) and (max-width: 480px){

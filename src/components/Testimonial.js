@@ -5,7 +5,8 @@ const TestimonialStyles = styled.div`
     .testimonial{
         display: grid;
         grid-template-columns: 347px 804px;
-        grid-column-gap: 73px;
+        /* grid-column-gap: 73px; */
+        justify-content: space-between;
     }
     @media (min-width: 320px) and (max-width: 480px){
         .testimonial{

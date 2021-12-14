@@ -1,10 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import GlobalStyles from "../styles/GlobalStyles";
-import Nav from "./Nav";
 
 const HeaderIdeaStyles = styled.header`
-    height: 616px;
+    /* height: 601px; */
     width: 100%;
     background-image: linear-gradient(#B2D9FB, #ffffff);
     display: flex;
@@ -13,10 +12,10 @@ const HeaderIdeaStyles = styled.header`
 .header-items{
     display: flex;
     flex-direction: column;
-    padding-top: 120px;
+    padding-top: 121px;
 }
 .group216{
-    width: 578px;
+    max-width: 578px;
     height: 227px;
     display: flex;
     flex-direction: column;
@@ -88,7 +87,6 @@ input::placeholder{
 function HeaderIdea(){
     return <HeaderIdeaStyles>
                 <GlobalStyles />
-                <Nav />
                 <div className="header-items">
                     <div className="group216">
                         <p className="informative">Informative ideas to scale your process, team and products</p>

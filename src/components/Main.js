@@ -5,6 +5,7 @@ import Signup from "./Signup";
 import Testimonial from "./Testimonial";
 
 const MainStyles = styled.main`
+width: 100%;
     max-width: 1333px;
     margin: 0 auto;
     height: 1383px;
@@ -18,7 +19,6 @@ const MainStyles = styled.main`
         text-transform: uppercase;
         font-family: 'Graphik';
         font-weight: 400;
-        padding-left: 108px;
         line-height: 100px;
         color: #445b78;
     }
@@ -36,13 +36,12 @@ const MainStyles = styled.main`
     
     .text-venture{
         padding-top: 80px;
-        padding-left: 96px;
         color: #445B78;
         font-size: 26px;
         text-transform: uppercase;
         font-family: 'Graphik';
-        font-weight: 500;
         line-height: 100px;
+        font-weight: 400;
     }
     @media (min-width: 320px) and (max-width: 480px){
         .text-venture{
