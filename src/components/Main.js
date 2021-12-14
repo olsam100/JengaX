@@ -5,10 +5,9 @@ import Signup from "./Signup";
 import Testimonial from "./Testimonial";
 
 const MainStyles = styled.main`
-    width: 100%;
-    /* height: 1374px; */
-    height: 1300px;
-    padding-top: 29px;
+    max-width: 1333px;
+    margin: 0 auto;
+    height: 1383px;
     @media (min-width: 320px) and (max-width: 480px){
         padding-top: 0px;
         height: 5500px;

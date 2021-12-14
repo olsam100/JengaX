@@ -2,9 +2,11 @@ import React from "react";
 import styled from "styled-components";
 
 const SignupStyles = styled.div`
+padding-top: 60px;
+padding-left: 421px;
     aside{
         height: 231px;
-        margin: 60px 107px 0 515px;
+        max-width: 803px;
         background-color: #5974AA;
     }
     @media (min-width: 320px) and (max-width: 480px){
@@ -61,12 +63,12 @@ const SignupStyles = styled.div`
     }
     @media (min-width: 320px) and (max-width: 480px){
         .email-navigation{
-            width: 100%
-        };
+            width: 100%;
+        }
     }
     i{
         display: flex;
-        justify-content: space-between:
+        justify-content: space-between;
         width: 743px;
     }
     .emailAddress{

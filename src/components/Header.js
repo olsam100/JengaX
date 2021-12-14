@@ -1,25 +1,23 @@
 import React from "react";
 import styled from "styled-components";
-import Nav from "./Nav";
+// import Nav from "./Nav";
 import {Image} from 'react-bootstrap';
 import backgroundImage from '../images/image1.svg';
 
 
 const HeaderStyles = styled.header`
-    height: 716px;
-    width: 100%;
+    height: 707px;
     background-image: linear-gradient(#B2D9FB, #ffffff);
     display: flex;
     flex-direction: column;
     position: relative;
-    margin: 0 auto;
-
 
 .header-items{
-    display: flex;
-    padding-top: 66px;
-    justify-content: space-between;
-    position: relative;
+    max-width: 1333px;
+    display: grid;
+    grid-template-columns: 442px 922px;
+    padding-top: 64px;
+    margin: 0 auto;
 }
 @media (min-width: 320px) and (max-width: 480px){
     .header-items{
@@ -28,12 +26,11 @@ const HeaderStyles = styled.header`
     justify-content: space-between;
     }
 }
-.wordwrapper{
-    /* width: 38%; */
+/* .wordwrapper{
     display: flex;
     width: 100%;
     justify-content: space-between;
-}
+} */
 @media (min-width) and (max-width: 480px){
     .wordwrapper{
         width: 480px;
@@ -54,11 +51,12 @@ const HeaderStyles = styled.header`
     padding-top: 104px;
     display: block;
     position: absolute;
-    left: 108px;
-    width: 660px;
+    max-width: 660px;
 }
-img{
+.imagebox{
     z-index: 0;
+    max-width: 922px;
+    padding-left: 53.5px;
 }
 @media (min-width: 320px) and (max-width: 480px){
     .capital{
@@ -79,20 +77,17 @@ img{
 
 function Header(){
     return <HeaderStyles>
-                <Nav />
+                {/* <Nav /> */}
+                
                 <div className="header-items">
                     <div className="wordwrapper">
                         <p className="capital">We're a capital firm designed for a new era.</p>
-                        {/* <Image src={backgroundImage} fluid alt="JengaX brand logo"/> */}
                     </div>
                     <div className="imagebox">
                          <Image src={backgroundImage} fluid alt="JengaX brand logo"/>
                     </div>
                 </div>
-           
-        
-       
-
+                    
     </HeaderStyles>
 }
 export default Header;

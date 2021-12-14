@@ -3,10 +3,8 @@ import styled from "styled-components";
 
 const TestimonialStyles = styled.div`
     .testimonial{
-        margin: 0 108px 0 96px;
         display: grid;
-        grid-template-columns: 347px auto;
-        /* grid-template-columns: 347px 804px; */
+        grid-template-columns: 347px 804px;
         grid-column-gap: 73px;
     }
     @media (min-width: 320px) and (max-width: 480px){
@@ -47,7 +45,7 @@ const TestimonialStyles = styled.div`
         display: grid;
         grid-template-columns: repeat(4, 150px);
         grid-template-rows: 150px;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         grid-column-gap: 68px;
     }
     @media (min-width: 320px) and (max-width: 480px){

@@ -4,13 +4,15 @@ import styled from 'styled-components';
 import '../components/custom.css';
 
 const NavStyles = styled.nav`
+    /* width: 100%; */
+    background-color: #B2D9FB;
     .nav-top{
-        padding-top: 57px;
+        max-width: 1333px;
         display: flex;
-        /* width: 85%; */
         align-items: center;
         justify-content: space-between;
         margin: 0 auto;
+        padding-top: 57px;
     }
     @media (min-width: 320px) and (max-width: 480px){
         .nav-top{
@@ -26,12 +28,12 @@ const NavStyles = styled.nav`
         font-family: 'BC Kakao';
         font-weight: 900;
         font-style: normal;
-        padding-left: 108px
+        /* padding-left: 108px */
     }
     
     .menu{
         display: flex;
-        padding-right: 109px;
+        /* padding-right: 109px; */
     }
     @media (min-width: 320px) and (max-width: 480px){
         menu{
@@ -96,10 +98,6 @@ const NavStyles = styled.nav`
 
 const activeStyle = {
     borderBottom: '3px solid #03060B',
-    // offset: '8px'
-    // paddingBottom: '8px',
-    // outlineOffset: '8px'
-    // height: '92px'
 }
 
 

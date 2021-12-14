@@ -3,10 +3,11 @@ import styled from "styled-components";
 
 const CollectionsStyles = styled.div`
     section{
+        /* max-width: 1236.85px; */
         display: grid;
         height: 380px;
-        padding: 0 107.15px 0 96px;
-        grid-template-columns: 347px auto;
+        /* padding: 0 107.15px 0 96px; */
+        grid-template-columns: 347px 803.85px;
         grid-gap: 72.15px;
     }
     @media (min-width: 320px) and (max-width: 480px){
@@ -50,7 +51,8 @@ const CollectionsStyles = styled.div`
         display: grid;
         grid-template-columns: repeat(3, 241.85px);
         /* grid-template-columns: repeat(3, auto); */
-        justify-content: space-between;
+        grid-column-gap: 40px;
+        /* justify-content: space-between; */
     }
     @media (min-width: 320px) and (max-width: 480px){
         .group{

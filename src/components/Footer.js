@@ -6,7 +6,6 @@ const FooterStyles = styled.footer`
     margin: 0 auto;
     padding-bottom: 56px;
     width: 100%;
-    padding: 0 108px;
     @media (min-width: 320px) and (max-width: 480px){
         width: 100%;
     }
@@ -14,6 +13,8 @@ const FooterStyles = styled.footer`
     .footer-container{
         display: flex;
         justify-content: space-between;
+        max-width: 1333px;
+        margin: 0 auto;
     }
     @media (min-width: 320px) and (max-width: 480px){
         .footer-container{
