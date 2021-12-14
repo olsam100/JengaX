@@ -6,25 +6,25 @@ const MissionStyles = styled.section`
     grid-template-rows: repeat(3, 120px);
     grid-row-gap: 60px;
     margin: 0 auto;
-    padding: 0 108px;
+    max-width: 1224px;
     
 
     .group2{
-        width: 100%;
+        max-width: 1224px;
         display: grid;
         grid-template-columns: 35% 65%;
         justify-content: space-between;
         align-items: center;
     }
     .group3{
-        width: 100%;
+        max-width: 1224px;
         display: grid;
         grid-template-columns: 35% 65%;
         justify-content: space-between;
         align-items: center;
     }
     .group4{
-        width: 100%;
+        max-width: 1224px;
         display: grid;
         grid-template-columns: 35% 65%;
         justify-content: space-between;
@@ -60,7 +60,7 @@ const MissionStyles = styled.section`
     }
     .empty{
         margin-top: 20px;
-        width: 100%;
+        max-width: 1224px;
         border: 1px solid #2F9BFF;
         opacity: 0.2;
     }

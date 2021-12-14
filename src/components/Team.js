@@ -5,10 +5,9 @@ const TeamStyles = styled.aside`
     height: 766px;
     width: 100%;
     background-color: #F8FCFF;
-    margin: 0 auto;
 
     .container{
-        width: 100%;
+        max-width: 1224px;
         margin: 0 auto;
         height: 617px;
     }
@@ -17,10 +16,6 @@ const TeamStyles = styled.aside`
         display: flex;
         flex-direction: column;
         height: 617px;
-        /* margin-top: 75px; */
-        padding-left: 228px;
-        padding-right: 190px;
-        /* padding-top: 75px; */
     }
     .meet-group{
         display: flex;
@@ -46,12 +41,11 @@ const TeamStyles = styled.aside`
     }
     .cards-group{
         height: 498px;
-        width: 100%;
         display: grid;
-        grid-template-columns: repeat(3, auto);
-        justify-content: space-between;
+        grid-template-columns: repeat(3, 274px);
+        grid-column-gap: 100px;
         padding-top: 40px;
-        margin-top: 40px;
+        margin: 40px auto 0 auto;
     }
     .card-labels{
         display: flex;

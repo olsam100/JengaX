@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 
 const PortfolioStyles = styled.article`
-    width: 100%;
-    /* margin: 0 auto; */
-    padding: 60px 108px 100px 108px;
+    max-width: 1224px;
+    margin: 0 auto;
+    padding-top: 60px;
     height: 310px;
     display: grid;
     grid-template-columns: 170px 696px;
