@@ -6,15 +6,13 @@ import backgroundImage from '../images/image1.svg';
 
 
 const HeaderStyles = styled.header`
-    /* height: 707px; */
-    /* height: 592px; */
     background-image: linear-gradient(#B2D9FB, #ffffff);
     display: flex;
     flex-direction: column;
     position: relative;
 
 .header-items{
-    max-width: 1333px;
+    max-width: 1224px;
     display: grid;
     grid-template-columns: 442px 922px;
     padding-top: 64px;
@@ -28,11 +26,6 @@ const HeaderStyles = styled.header`
     justify-content: space-between;
     }
 }
-/* .wordwrapper{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-} */
 @media (min-width) and (max-width: 480px){
     .wordwrapper{
         width: 480px;
@@ -58,7 +51,6 @@ const HeaderStyles = styled.header`
 .imagebox{
     z-index: 0;
     max-width: 922px;
-    padding-left: 53.5px;
 }
 @media (min-width: 320px) and (max-width: 480px){
     .capital{

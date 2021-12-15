@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const PortfolioStyles = styled.article`
-    max-width: 1333px;
+    max-width: 1224px;
     margin: 0 auto;
     padding-top: 60px;
     height: 310px;

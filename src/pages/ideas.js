@@ -15,10 +15,6 @@ const MainStyles = styled.main`
     height: 1939px;
     max-width: 1440px;
     margin: 0 auto;
-
-    /* width: 100%;
-    height: 1300px; */
-    
 `;
 
 const FooterStyles = {

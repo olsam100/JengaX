@@ -6,26 +6,26 @@ const MissionStyles = styled.section`
     grid-template-rows: repeat(3, 120px);
     grid-row-gap: 60px;
     margin: 0 auto;
-    max-width: 1333px;
+    max-width: 1224px;
     justify-content: space-between;
     
 
     .group2{
-        max-width: 1333px;
+        max-width: 1224px;
         display: grid;
         grid-template-columns: 35% 65%;
         justify-content: space-between;
         align-items: center;
     }
     .group3{
-        max-width: 1333px;
+        max-width: 1224px;
         display: grid;
         grid-template-columns: 35% 65%;
         justify-content: space-between;
         align-items: center;
     }
     .group4{
-        max-width: 1333px;
+        max-width: 1224px;
         display: grid;
         grid-template-columns: 35% 65%;
         justify-content: space-between;
@@ -61,7 +61,7 @@ const MissionStyles = styled.section`
     }
     .empty{
         margin-top: 20px;
-        max-width: 1333px;
+        max-width: 1224px;
         border: 1px solid #2F9BFF;
         opacity: 0.2;
     }

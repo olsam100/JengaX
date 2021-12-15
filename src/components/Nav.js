@@ -4,10 +4,9 @@ import styled from 'styled-components';
 import '../components/custom.css';
 
 const NavStyles = styled.nav`
-    /* width: 100%; */
     background-color: #B2D9FB;
     .nav-top{
-        max-width: 1333px;
+        max-width: 1224px;
         display: flex;
         align-items: center;
         justify-content: space-between;
