@@ -10,7 +10,6 @@ const HeaderStyles = styled.header`
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 100%;
 
 .header-items{
     max-width: 1224px;
@@ -43,7 +42,7 @@ const HeaderStyles = styled.header`
     line-height: 100px;
     letter-spacing: -4%;
     opacity: 100%;
-    /* padding-top: 104px; */
+    padding-top: 104px;
     display: block;
     position: absolute;
     max-width: 660px;
