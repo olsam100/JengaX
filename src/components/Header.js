@@ -14,7 +14,7 @@ const HeaderStyles = styled.header`
 .header-items{
     max-width: 1224px;
     display: grid;
-    grid-template-columns: 442px 922px;
+    grid-template-columns: 442px 890px;
     padding-top: 64px;
     padding-bottom: 18px;
     margin: 0 auto;
@@ -42,14 +42,12 @@ const HeaderStyles = styled.header`
     line-height: 100px;
     letter-spacing: -4%;
     opacity: 100%;
-    z-index: 1;
-    padding-top: 104px;
+    /* padding-top: 104px; */
     display: block;
     position: absolute;
     max-width: 660px;
 }
 .imagebox{
-    z-index: 0;
     max-width: 922px;
 }
 @media (min-width: 320px) and (max-width: 480px){
