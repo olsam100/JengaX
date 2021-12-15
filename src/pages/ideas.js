@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import Footer from '../components/Footer';
 import ButtonGroup from '../components/ButtonGroup';
 import Information from '../components/Information';
-import Nav from '../components/Nav';
 
 
 const MainStyles = styled.main`
@@ -23,7 +22,6 @@ const FooterStyles = {
 
 function Ideas(){
     return <MainStyles>
-    <Nav />
     <HeaderIdea />
     <ButtonGroup />
     <Information />

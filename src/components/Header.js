@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-// import Nav from "./Nav";
+import Nav from "./Nav";
 import {Image} from 'react-bootstrap';
 import backgroundImage from '../images/image1.svg';
 
@@ -69,7 +69,7 @@ const HeaderStyles = styled.header`
 
 function Header(){
     return <HeaderStyles>
-                {/* <Nav /> */}
+                <Nav />
                 
                 <div className="header-items">
                     <div className="wordwrapper">

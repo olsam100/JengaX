@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import GlobalStyles from "../styles/GlobalStyles";
+import Nav from "./Nav";
 
 const HeaderIdeaStyles = styled.header`
     /* height: 601px; */
@@ -87,6 +88,7 @@ input::placeholder{
 function HeaderIdea(){
     return <HeaderIdeaStyles>
                 <GlobalStyles />
+                <Nav />
                 <div className="header-items">
                     <div className="group216">
                         <p className="informative">Informative ideas to scale your process, team and products</p>

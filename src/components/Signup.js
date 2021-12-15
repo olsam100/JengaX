@@ -3,10 +3,10 @@ import styled from "styled-components";
 
 const SignupStyles = styled.div`
 padding-top: 60px;
-padding-left: 530px;
+padding-left: 420px;
     aside{
         height: 231px;
-        max-width: 803px;
+        width: 803px;
         background-color: #5974AA;
     }
     @media (min-width: 320px) and (max-width: 480px){

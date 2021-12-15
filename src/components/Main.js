@@ -5,7 +5,7 @@ import Signup from "./Signup";
 import Testimonial from "./Testimonial";
 
 const MainStyles = styled.main`
-width: 100%;
+    width: 100%;
     max-width: 1224px;
     margin: 0 auto;
     height: 1383px;

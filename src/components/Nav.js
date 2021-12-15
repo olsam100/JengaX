@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import '../components/custom.css';
 
 const NavStyles = styled.nav`
-    background-color: #B2D9FB;
     .nav-top{
         max-width: 1224px;
         display: flex;
@@ -27,12 +26,11 @@ const NavStyles = styled.nav`
         font-family: 'BC Kakao';
         font-weight: 900;
         font-style: normal;
-        /* padding-left: 108px */
     }
     
     .menu{
         display: flex;
-        /* padding-right: 109px; */
+        align-items: center;
     }
     @media (min-width: 320px) and (max-width: 480px){
         menu{
@@ -57,9 +55,10 @@ const NavStyles = styled.nav`
         font-weight: 500;
         font-style: normal;
         font-size: 15px;
-        padding-bottom: 8px;
+        /* padding-bottom: 8px; */
         color: #03060B;
-        border-bottom: 3px solid transparent;
+        /* border-bottom: 3px solid transparent; */
+
     }
 
     button{

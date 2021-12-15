@@ -3,7 +3,6 @@ import Header from '../components/Header';
 import MainVenture from '../components/MainVenture';
 import GlobalStyles from '../styles/GlobalStyles';
 import Footer from '../components/Footer';
-import Nav from '../components/Nav';
 import styled from 'styled-components';
 
 
@@ -20,7 +19,6 @@ const VentureStyles = styled.main`
 function Venture(){
     return <VentureStyles>
     <GlobalStyles />
-        <Nav />
         <Header />
         <MainVenture />
         <Footer />
