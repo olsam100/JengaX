@@ -10,6 +10,7 @@ const HeaderStyles = styled.header`
     display: flex;
     flex-direction: column;
     position: relative;
+    width: 100%;
 
 .header-items{
     max-width: 1224px;

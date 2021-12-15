@@ -8,7 +8,7 @@ const MainStyles = styled.main`
     width: 100%;
     max-width: 1224px;
     margin: 0 auto;
-    height: 1383px;
+    /* height: 1383px; */
     @media (min-width: 320px) and (max-width: 480px){
         padding-top: 0px;
         height: 5500px;

@@ -10,9 +10,8 @@ const VentureStyles = styled.main`
     width: 100%;
     display: flex;
     flex-direction: column;
-    overflow: scroll;
     height: 2615px;
-    max-width: 1440px;
+    /* max-width: 1440px; */
     margin: 0 auto;
 `;
 

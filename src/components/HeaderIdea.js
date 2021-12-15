@@ -4,7 +4,7 @@ import GlobalStyles from "../styles/GlobalStyles";
 import Nav from "./Nav";
 
 const HeaderIdeaStyles = styled.header`
-    /* height: 601px; */
+    height: 601px;
     width: 100%;
     background-image: linear-gradient(#B2D9FB, #ffffff);
     display: flex;

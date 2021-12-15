@@ -10,9 +10,7 @@ const MainStyles = styled.main`
     width: 100%;
     display: flex;
     flex-direction: column;
-    overflow: scroll;
-    height: 1939px;
-    max-width: 1440px;
+    /* max-width: 1440px; */
     margin: 0 auto;
 `;
 
