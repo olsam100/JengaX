@@ -9,9 +9,12 @@ const MainStyles = styled.main`
     max-width: 1224px;
     margin: 0 auto;
     /* height: 1383px; */
+    @media (max-width: 768px){
+        max-width: 678px;
+        margin: 0 auto;
+    }
     @media (min-width: 320px) and (max-width: 480px){
         padding-top: 0px;
-        height: 5500px;
     }
     
     .idea-text{
@@ -24,8 +27,8 @@ const MainStyles = styled.main`
     }
 @media (min-width: 320px) and (max-width: 480px){
     .idea-text{
-        padding-left: 30px;
         line-height: 50px;
+        text-align: center;
     }
 }
     
@@ -42,6 +45,11 @@ const MainStyles = styled.main`
         font-family: 'Graphik';
         line-height: 100px;
         font-weight: 400;
+    }
+    @media (max-width: 768px){
+        .text-venture{
+            padding-top: 40px;
+        }
     }
     @media (min-width: 320px) and (max-width: 480px){
         .text-venture{

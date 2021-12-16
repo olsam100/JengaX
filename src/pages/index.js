@@ -11,10 +11,17 @@ const MainStyles = styled.main`
     flex-direction: column;
     /* max-width: 1440px; */
     margin: 0 auto;
+    @media (max-width: 1024px){
+      width: 100%;
+    }
+    @media (max-width: 768px){
+      height: auto;
+    }
     @media (min-width: 320px) and (max-width: 480px){
-        /* height: 3000px;  */
-        /* height: auto; */
+      width: 100%;
+      /* height: auto; */
       }
+
 `;
 
 function HomePage(){

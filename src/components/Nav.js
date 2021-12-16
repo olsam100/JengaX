@@ -12,6 +12,12 @@ const NavStyles = styled.nav`
         margin: 0 auto;
         padding-top: 57px;
     }
+    @media (max-width: 768px){
+        .nav-top{
+            max-width: 678px;
+            margin: 0 auto;
+        }
+    }
     @media (min-width: 320px) and (max-width: 480px){
         .nav-top{
             padding-top: 30px;
@@ -103,7 +109,10 @@ const activeStyle = {
 function Nav(){
     return <NavStyles>
         <div className="nav-top">
-            <div className="brandlogo">JengaX</div>
+            <div className="brandlogo">
+                <Link to="/" className="brandlogo">JengaX</Link>
+                
+            </div>
             <div className="menu">
                 <ul>
                     <li>

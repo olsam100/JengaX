@@ -4,17 +4,35 @@ import styled from "styled-components";
 const SignupStyles = styled.div`
 padding-top: 60px;
 padding-left: 420px;
+@media (max-width: 1024px){
+    padding-left: 0;
+}
+@media (max-width: 768px){
+    width: 100%;
+    padding-left: 0;
+    padding-top: 30px;
+}
+@media (min-width: 320px) and (max-width: 480px){
+    width: 80%;
+    padding-left: 0;
+    margin: 0 auto;
+}
+aside{
+    height: 231px;
+    width: 803px;
+    background-color: #5974AA;
+}
+@media (max-width: 768px){
     aside{
-        height: 231px;
-        width: 803px;
-        background-color: #5974AA;
+        max-width: 100%;
     }
-    @media (min-width: 320px) and (max-width: 480px){
-        aside{
-            width: 90%;
-            margin: 0 auto;
-        }
+}
+@media (min-width: 320px) and (max-width: 480px){
+    aside{
+        width: 100%;
+        margin: 0 auto;
     }
+}
     .group215{
         height: 152px;
         padding: 47px 30px 32px 30px;

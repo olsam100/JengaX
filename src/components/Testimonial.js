@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from 'gatsby';
 
 const TestimonialStyles = styled.div`
     .testimonial{
@@ -7,6 +8,12 @@ const TestimonialStyles = styled.div`
         grid-template-columns: 347px 804px;
         /* grid-column-gap: 73px; */
         justify-content: space-between;
+    }
+    @media (max-width: 768px){
+        .testimonial{
+            display: flex;
+            flex-direction: column;
+        }
     }
     @media (min-width: 320px) and (max-width: 480px){
         .testimonial{
@@ -27,7 +34,8 @@ const TestimonialStyles = styled.div`
         border-radius: 100px;
         margin-top: 32px;
     }
-    button{
+    button,
+    a.secondary{
         width: auto;
         display: flex;
         align-items: center;
@@ -48,6 +56,17 @@ const TestimonialStyles = styled.div`
         grid-template-rows: 150px;
         /* justify-content: space-between; */
         grid-column-gap: 68px;
+    }
+    @media (max-width: 768px){
+        .group214{
+            width: 100%;
+            grid-template-columns: repeat(4, 100px);
+            grid-template-rows: 100px;
+            /* grid-row-gap: 68px; */
+            /* margin: 0 auto; */
+            justify-content: space-between;
+            padding-top: 50px;
+        }
     }
     @media (min-width: 320px) and (max-width: 480px){
         .group214{
@@ -78,6 +97,7 @@ const TestimonialStyles = styled.div`
             line-height: 36px;
         }   
     }
+    
 `;
 
 function Testimonial(){
@@ -88,12 +108,14 @@ function Testimonial(){
                 We invest in you to help you scale your business
                 </p>
                 <div className="buttonwrapper">
-                    <button className="secondary">Read about our venture
-                        <span>
-                            <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.29289 5.50001L0 2.20712L1.41421 0.792908L6.12132 5.50001L1.41421 10.2071L0 8.79291L3.29289 5.50001Z" fill="#5974AA"/>
-                            </svg>
-                        </span>
+                    <button className="secondary">
+                        <Link to="/venture" className="secondary">Read about our venture
+                            <span>
+                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.29289 5.50001L0 2.20712L1.41421 0.792908L6.12132 5.50001L1.41421 10.2071L0 8.79291L3.29289 5.50001Z" fill="#5974AA"/>
+                                </svg>
+                            </span>
+                        </Link>
                     </button>
                 </div>
                 

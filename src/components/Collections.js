@@ -1,7 +1,19 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from 'gatsby';
 
 const CollectionsStyles = styled.div`
+    @media (max-width: 1024px){
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    @media (max-width: 768px){
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 650px;
+    }
     section{
         width: 100%;
         /* max-width: 1236.85px; */
@@ -11,25 +23,61 @@ const CollectionsStyles = styled.div`
         justify-content: space-between;
         /* grid-gap: 72.15px; */
     }
-    @media (min-width: 320px) and (max-width: 480px){
+    @media (max-width: 1024px){
         section{
-            width: 100%;
-            margin: 0;
             display: flex;
             flex-direction: column;
+        }
+    }
+    @media (max-width: 768px){
+        section{
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        section{
             /* height: 700px; */
             height: auto;
         }   
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        .share-idea{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+            align-items: center;
+        }
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        /* .buttonwrapper{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        } */
     }
     .share-collection{
         display: grid;
         grid-template-rows: repeat(2, 165px);
         grid-row-gap: 50px;
     }
-    @media (min-width: 320px) and (max-width: 480px){
+    @media (max-width: 768px){
         .share-collection{
             display: flex;
             flex-direction: column;
+            padding-top: 50px;
+        }
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        .share-collection{
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     }
     .share-paraph{
@@ -51,16 +99,25 @@ const CollectionsStyles = styled.div`
     .group{
         display: grid;
         grid-template-columns: repeat(3, 241.85px);
-        /* grid-template-columns: repeat(3, auto); */
         grid-column-gap: 40px;
         /* justify-content: space-between; */
+    }
+    @media (max-width: 768px){
+        .group{
+            display: flex;
+        }
     }
     @media (min-width: 320px) and (max-width: 480px){
         .group{
             display: flex;
             flex-direction: column;
+            width: 100%;
+            align-items: center;
             justify-content: center;
         }   
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+       
     }
     .heading1{
         height: 30px;
@@ -152,7 +209,8 @@ const CollectionsStyles = styled.div`
         border-radius: 100px;
         margin-top: 32px;
     }
-    button{
+    button,
+    a.secondary{
         width: auto;
         display: flex;
         align-items: center;
@@ -167,6 +225,28 @@ const CollectionsStyles = styled.div`
         border-width: 0px;
         border-style: unset;
     }
+    @media (max-width: 768px){
+        .group201,
+        .group202,
+        .group203{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    @media (max-width: 768px){
+        .heading1{
+
+        }
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        .group201,
+        .group202,
+        .group203{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
 `;
 
 function Collections(){
@@ -177,16 +257,18 @@ function Collections(){
                     We share ideas to help you scale your business
                 </p>
                 <div className="buttonwrapper">
-                    <button className="secondary">See more of our ideas
-                        <span>
-                            <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.29289 5.50001L0 2.20712L1.41421 0.792908L6.12132 5.50001L1.41421 10.2071L0 8.79291L3.29289 5.50001Z" fill="#5974AA"/>
-                            </svg>
-                        </span>
+                    <button className="secondary">
+                        <Link to="/ideas" className="secondary">See more of our ideas
+                            <span>
+                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.29289 5.50001L0 2.20712L1.41421 0.792908L6.12132 5.50001L1.41421 10.2071L0 8.79291L3.29289 5.50001Z" fill="#5974AA"/>
+                                </svg>
+                            </span>
+                        </Link>
                     </button>
                 </div>
-                
             </div>
+
             <div className="share-collection">
                 <div className="group group-206">
                     <div className="group201">
