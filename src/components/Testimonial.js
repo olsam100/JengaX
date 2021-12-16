@@ -9,6 +9,12 @@ const TestimonialStyles = styled.div`
         /* grid-column-gap: 73px; */
         justify-content: space-between;
     }
+    @media (max-width: 1024px){
+        .testimonial{
+            display: flex;
+            flex-direction: column;
+        }
+    }
     @media (max-width: 768px){
         .testimonial{
             display: flex;
@@ -21,6 +27,11 @@ const TestimonialStyles = styled.div`
             flex-direction: column;
             margin: 0 auto;
         }   
+    }
+    @media (max-width: 1024px){
+        .share-idea{
+            margin: 0 auto;
+        }
     }
     @media (min-width: 320px) and (max-width: 480px){
         .share-idea{
@@ -36,7 +47,7 @@ const TestimonialStyles = styled.div`
     }
     button,
     a.secondary{
-        width: auto;
+        width: 300px;
         display: flex;
         align-items: center;
         border-color: #ffffff;
@@ -44,7 +55,6 @@ const TestimonialStyles = styled.div`
         background-color: #ffffff;
         color: #5974AA;
         font-size: 18px;
-        justify-content: center;
         font-family: 'Graphik';
         font-weight: 600;
         border-width: 0px;
@@ -57,13 +67,17 @@ const TestimonialStyles = styled.div`
         /* justify-content: space-between; */
         grid-column-gap: 68px;
     }
+    @media (max-width: 1024px){
+        .group214{
+            margin: 0 auto;
+            padding-top: 50px;
+        }
+    }
     @media (max-width: 768px){
         .group214{
             width: 100%;
             grid-template-columns: repeat(4, 100px);
             grid-template-rows: 100px;
-            /* grid-row-gap: 68px; */
-            /* margin: 0 auto; */
             justify-content: space-between;
             padding-top: 50px;
         }
@@ -91,6 +105,11 @@ const TestimonialStyles = styled.div`
         line-height: 50px;
         color: #03060B;
     }
+    @media (max-width: 1024px){
+        .share-paraph{
+            /* font-size: 32px; */
+        }
+    }
     @media (min-width: 320px) and (max-width: 480px){
         .share-paraph{
             font-size: 24px;
@@ -105,11 +124,11 @@ function Testimonial(){
         <div className="testimonial">
             <div className="share-idea">
                 <p className="share-paraph">
-                We invest in you to help you scale your business
+                We support founders building a better future for everyone 
                 </p>
                 <div className="buttonwrapper">
                     <button className="secondary">
-                        <Link to="/venture" className="secondary">Read about our venture
+                        <Link to="/venture" className="secondary">Learn more about our ventures
                             <span>
                                 <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M3.29289 5.50001L0 2.20712L1.41421 0.792908L6.12132 5.50001L1.41421 10.2071L0 8.79291L3.29289 5.50001Z" fill="#5974AA"/>

@@ -3,12 +3,13 @@ import styled from "styled-components";
 import { Link } from 'gatsby';
 
 const CollectionsStyles = styled.div`
-    @media (max-width: 1024px){
+    @media (min-width: 769px) and (max-width: 1024px){
         width: 100%;
         display: flex;
         flex-direction: column;
+        height: 560px;
     }
-    @media (max-width: 768px){
+    @media (min-width: 481px) and (max-width: 768px){
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -16,20 +17,18 @@ const CollectionsStyles = styled.div`
     }
     section{
         width: 100%;
-        /* max-width: 1236.85px; */
         display: grid;
         height: 380px;
         grid-template-columns: 347px 803.85px;
         justify-content: space-between;
-        /* grid-gap: 72.15px; */
     }
-    @media (max-width: 1024px){
+    @media (min-width: 769px) and (max-width: 1024px){
         section{
             display: flex;
             flex-direction: column;
         }
     }
-    @media (max-width: 768px){
+    @media (min-width: 481px) and (max-width: 768px){
         section{
             width: 100%;
             margin: 0 auto;
@@ -39,9 +38,15 @@ const CollectionsStyles = styled.div`
     }
     @media (min-width: 320px) and (max-width: 480px){
         section{
-            /* height: 700px; */
             height: auto;
+            display: flex;
+            flex-direction: column;
         }   
+    }
+    @media (max-width: 1024px){
+        .share-idea{
+            margin: 0 auto;
+        }
     }
     @media (min-width: 320px) and (max-width: 480px){
         .share-idea{
@@ -64,7 +69,7 @@ const CollectionsStyles = styled.div`
         grid-template-rows: repeat(2, 165px);
         grid-row-gap: 50px;
     }
-    @media (max-width: 768px){
+    @media (min-width: 481px) and (max-width: 768px){
         .share-collection{
             display: flex;
             flex-direction: column;
@@ -73,7 +78,7 @@ const CollectionsStyles = styled.div`
     }
     @media (min-width: 320px) and (max-width: 480px){
         .share-collection{
-            width: 90%;
+            max-width: 100%;
             margin: 0 auto;
             display: flex;
             flex-direction: column;
@@ -102,7 +107,14 @@ const CollectionsStyles = styled.div`
         grid-column-gap: 40px;
         /* justify-content: space-between; */
     }
-    @media (max-width: 768px){
+    @media (min-width: 769px) and (max-width: 1024px){
+        .group{
+            text-align: justify;
+            margin: 0 auto;
+            padding-top: 50px;
+        }
+    }
+    @media (min-width: 481px) and (max-width: 768px){
         .group{
             display: flex;
         }
@@ -254,11 +266,11 @@ function Collections(){
         <section>
             <div className="share-idea">
                 <p className="share-paraph">
-                    We share ideas to help you scale your business
+                    Our ideas help founders and their teams scale their execution 
                 </p>
                 <div className="buttonwrapper">
                     <button className="secondary">
-                        <Link to="/ideas" className="secondary">See more of our ideas
+                        <Link to="/ideas" className="secondary">Learn more of our ideas
                             <span>
                                 <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M3.29289 5.50001L0 2.20712L1.41421 0.792908L6.12132 5.50001L1.41421 10.2071L0 8.79291L3.29289 5.50001Z" fill="#5974AA"/>

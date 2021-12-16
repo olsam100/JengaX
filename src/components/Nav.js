@@ -1,7 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 import '../components/custom.css';
+// import * as FaIcons from 'react-icons/fa';
+// import * as AiIcons from 'react-icons/ai';
+
+import Hamburger from './Hamburger';
+
 
 const NavStyles = styled.nav`
     .nav-top{
@@ -12,10 +17,31 @@ const NavStyles = styled.nav`
         margin: 0 auto;
         padding-top: 57px;
     }
-    @media (max-width: 768px){
+    .hamburger{
+        display: none;
+    }
+    @media (min-width: 1025px) and (max-width: 1200px){
+        .nav-top{
+            max-width: 80%;
+            margin: 0 auto;
+        }
+    }
+    @media (min-width: 769px) and (max-width: 1024px){
+        .nav-top{
+            max-width: 824px;
+            margin: 0 auto;
+        }
+        .hamburger{
+            display: none;
+        }
+    }
+    @media (min-width: 481px) and (max-width: 768px){
         .nav-top{
             max-width: 678px;
             margin: 0 auto;
+        }
+        .hamburger{
+            display: none;
         }
     }
     @media (min-width: 320px) and (max-width: 480px){
@@ -24,6 +50,30 @@ const NavStyles = styled.nav`
             flex-direction: column;
             width: 100%;
             align-items: center;
+            flex-flow: column nowrap;
+            background: transparent;
+            /* position: fixed;  */
+            top: 0;
+            right: 0;
+            /* height: 500px; */
+            display: none;
+        }
+        .hamburger{
+            display: flex;
+            padding-top: 50px;
+            padding-left: 50px;
+            
+        }
+        svg{
+            width: 5rem;
+            height: 5rem;
+            top: rem;
+            right: 5rem;
+        }
+    }
+    @media (max-width: 320px){
+        .nav-top{
+
         }
     }
     .brandlogo{
@@ -107,8 +157,15 @@ const activeStyle = {
 
 
 function Nav(){
-    return <NavStyles>
-        <div className="nav-top">
+    // const [bar, setBar ] = useState(false);
+    // const showSidebar =  () => setBar(!bar) 
+    return (
+     <NavStyles>
+        {/* <Hamburger /> */}
+        {/* className={bar ? 'bars-menu active' : 'bars-menu '} */}
+        {/* <div className='hamburger'><FaIcons.FaBars onClick={showSidebar} /></div> */}
+        <div className="nav-top" >
+            {/* <Link to="#" ><AiIcons.AiOutlineClose /></Link> */}
             <div className="brandlogo">
                 <Link to="/" className="brandlogo">JengaX</Link>
                 
@@ -119,11 +176,12 @@ function Nav(){
                         <Link to="/" activeStyle={activeStyle} >Home</Link>
                     </li>
                     <li>
-                        <Link to="/venture" className="link" activeStyle={activeStyle}>Venture</Link>
-                    </li>
-                    <li>
                         <Link to="/ideas" className="link" activeStyle={activeStyle}>Ideas</Link>
                     </li>
+                    <li>
+                        <Link to="/venture" className="link" activeStyle={activeStyle}>Venture</Link>
+                    </li>
+                    
                     <li>
                         <button type="button" className="myButton">Get in touch
                         <span>
@@ -141,7 +199,8 @@ function Nav(){
             
             
             
-    </NavStyles>;
+    </NavStyles>
+    );
 }
 
 export default Nav;

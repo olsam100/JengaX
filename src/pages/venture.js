@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from '../components/Header';
 import MainVenture from '../components/MainVenture';
 import GlobalStyles from '../styles/GlobalStyles';
 import Footer from '../components/Footer';
 import styled from 'styled-components';
+import HeaderVenture from '../components/HeaderVenture';
 
 
 const VentureStyles = styled.main`
@@ -18,7 +18,8 @@ const VentureStyles = styled.main`
 function Venture(){
     return <VentureStyles>
     <GlobalStyles />
-        <Header />
+        {/* <Header /> */}
+        <HeaderVenture />
         <MainVenture />
         <Footer />
     </VentureStyles>

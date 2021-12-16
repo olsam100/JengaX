@@ -19,7 +19,6 @@ const MainStyles = styled.main`
     }
     @media (min-width: 320px) and (max-width: 480px){
       width: 100%;
-      /* height: auto; */
       }
 
 `;

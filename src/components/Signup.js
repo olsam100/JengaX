@@ -5,7 +5,8 @@ const SignupStyles = styled.div`
 padding-top: 60px;
 padding-left: 420px;
 @media (max-width: 1024px){
-    padding-left: 0;
+    padding-left: 110px;
+    margin: 0 auto;
 }
 @media (max-width: 768px){
     width: 100%;
@@ -127,7 +128,7 @@ function Signup(){
     return <SignupStyles>
         <aside>
             <div className="group215">
-                <p className="supporting">Sign up for the JengaX ideas, a monthly digest of what we're thinking, learning and looking to do next</p>
+                <p className="supporting">Sign up for the JengaX Ideas for insights to create, sell, manage and scale your startup</p>
                 <div className="group211">
                     <div className="emailwrapper">
                         <div className="email-navigation">

@@ -51,16 +51,17 @@ const HeaderStyles = styled.header`
     }
 }
 .capital{
-    font-size: 87px;
+    font-size: 50px;
     color: #03060B;
     font-weight: 600;
     font-style: normal;
     font-family: 'Graphik';
-    line-height: 100px;
+    line-height: 75px;
     letter-spacing: -4%;
     opacity: 100%;
     padding-top: 104px;
-    display: block;
+    display: flex;
+    flex-wrap: nowrap;
     position: absolute;
     max-width: 660px;
 }
@@ -127,13 +128,15 @@ const HeaderStyles = styled.header`
 
 `;
 
-function Header(){
+function HeaderVenture(){
     return <HeaderStyles>
                 <Nav />
                 
                 <div className="header-items">
                     <div className="wordwrapper">
-                        <p className="capital">We are Builders backing Builders</p>
+                        <p className="capital">
+                            We are Builders backing Builders from developing markets to scale in today's global economy
+                        </p>
                     </div>
                     <div className="imagebox">
                          <Image src={backgroundImage} fluid alt="JengaX brand logo"/>
@@ -142,4 +145,4 @@ function Header(){
                     
     </HeaderStyles>
 }
-export default Header;
+export default HeaderVenture;

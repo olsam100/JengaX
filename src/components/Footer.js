@@ -8,7 +8,11 @@ const FooterStyles = styled.footer`
     width: 100%;
     max-width: 1224px;
     padding-top: 100px;
-    @media (max-width: 768px){
+    @media (max-width: 1024px){
+        width: 100%;
+        /* margin: 0 auto; */
+    }
+    @media (min-width: 481px) and (max-width: 768px){
         width: 90%;
         margin: 0 auto;
         display: flex;
@@ -21,10 +25,15 @@ const FooterStyles = styled.footer`
     .footer-container{
         display: flex;
         justify-content: space-between;
-        max-width: 1333px;
+        max-width: 1224px;
         margin: 0 auto;
     }
-    @media (max-width: 768px){
+    @media (min-width: 769px) and (max-width: 1024px){
+        .footer-container{
+            flex-direction: column;
+        }
+    }
+    @media (min-width: 481px) and (max-width: 768px){
         .footer-container{
             width: 100%;
             display: flex;
@@ -42,11 +51,44 @@ const FooterStyles = styled.footer`
         display: flex;
         align-items: center;
     }
-    @media (max-width: 768px){
+    @media (min-width: 769px) and (max-width: 1024px){
+        .left,
+        .right{
+            width: 90%;
+            margin: 0 auto;
+            justify-content: space-between;
+        }
+    }
+    @media (min-width: 481px) and (max-width: 768px){
         .left,
         .right{
             justify-content: space-between;
         }
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        
+        .right{
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+        .left{
+            width: 320px;
+            margin: 0 auto;
+        }
+        li{
+            padding-left: 0px;
+        }
+    }
+    ul{
+    width: 320px;
+    list-style-type: disc;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
     }
     li{
         text-decoration: none;
@@ -68,6 +110,17 @@ const FooterStyles = styled.footer`
         font-style: normal;
         font-size: 48px;
         color: #03060B;
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        .brand-link{
+            font-size: 24px;
+        }
+        .idea-text{
+            padding-left: 30px;
+        }
+        .venture-text{
+            padding-left: 20px;
+        }
     }
     .ideas-link,
     .venture-link{
@@ -95,6 +148,19 @@ const FooterStyles = styled.footer`
         margin-inline-end: 0px;
         width: 320px;
     }
+    @media (min-width: 320px) and (max-width: 480px){
+        .right{
+            width: 80%;
+            /* margin-top: 20px; */
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+        .build,
+        .contact-mail{
+            font-size: 12px;
+            text-align: center;
+        }
+    }
     span{
         padding-left: 5px;
         padding-top: 3px;
@@ -110,11 +176,30 @@ const FooterStyles = styled.footer`
         margin-inline-start: 0px;
         margin-inline-end: 0px;
     }
-    @media (max-width: 768px){
+    @media (min-width: 769px) and (max-width: 1024px){
+        ul{
+            width: 100%;
+            display: flex;
+            margin: 0 auto;
+            justify-content: space-between;
+            padding-bottom: 30px;
+        }
+    }
+    @media (min-width: 481px) and (max-width: 768px){
         ul{
             width: 100%;
             display: flex;
             justify-content: space-between;
+        }
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        ul{
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+        }
+        .one{
+            margin: 0 auto;
         }
     }
 `;
@@ -137,7 +222,7 @@ function Footer(){
             </div>
             <div className="right">
                 <div className="one">
-                    <p className="build">Let’s build something amazing together 
+                    <p className="build">Let’s build together 
                         <span>&#9758;</span>
                     </p>
                 </div>

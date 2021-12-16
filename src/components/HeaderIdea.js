@@ -91,8 +91,8 @@ function HeaderIdea(){
                 <Nav />
                 <div className="header-items">
                     <div className="group216">
-                        <p className="informative">Informative ideas to scale your process, team and products</p>
-                        <p className="subscribe">Subscribe to our newsletter to get new content as they drop</p>
+                        <p className="informative">Insights from Builders for Builders</p>
+                        <p className="subscribe">Subscribe to JengaX Ideas for insights to create, sell, manage and scale your startup </p>
                         <div className="group193">
                             <input type="email" placeholder="Enter your email"/>
                             <button className="btn">Subscribe</button>

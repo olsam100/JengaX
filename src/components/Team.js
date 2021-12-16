@@ -96,8 +96,8 @@ function Team(){
         <div className="container">
             <div className="group117">
                 <div className="meet-group">
-                    <p className="meet-label">Meet the team</p>
-                    <p className="we-need">We need to close the skills gap and improve access to</p>
+                    <p className="meet-label">Team</p>
+                    {/* <p className="we-need">We need to close the skills gap and improve access to</p> */}
                 </div>
 
                 
