@@ -2,18 +2,20 @@ import React from "react";
 import styled from "styled-components";
 
 const TeamStyles = styled.aside`
-    height: 766px;
+    /* height: 766px; */
     width: 100%;
     background-color: #F8FCFF;
     @media (min-width: 481px) and (max-width: 768px){
         /* margin-top: 200px; */
-        height: 600px;
+        /* height: 600px; */
     }
 
     .container{
         max-width: 1224px;
-        margin: 0 auto;
-        height: 617px;
+        margin: 80px auto 0 auto;
+        /* height: 617px; */
+        padding-bottom: 80px;
+        /* padding: 80px 0; */
     }
     @media (min-width: 769px) and (max-width: 1024px){
         .container{
@@ -22,44 +24,45 @@ const TeamStyles = styled.aside`
     }
     @media (min-width: 481px) and (max-width: 768px){
         .container{
-            height: 600px;
+            /* height: 600px; */
             width: 100%;
-            margin-top: 200px;
+            /* margin-top: 200px; */
         }
     }
     @media (min-width: 320px) and (max-width: 480px){
         .container{
-            height: 600px;
+            /* height: 600px; */
             width: 100%;
-            margin-top: 200px;
+            /* margin-top: 200px; */
         }
     }
 
     .group117{
         display: flex;
         flex-direction: column;
-        height: 617px;
+        /* height: 617px; */
     }
     @media (min-width: 769px) and (max-width: 1024px){
         .group117{
-            height: auto;
+            /* height: auto; */
         }
     }
     @media (min-width: 481px) and (max-width: 768px){
         .group117{
-            height: auto;
+            /* height: auto; */
         }
     }
     .meet-group{
         display: flex;
         flex-direction: column;
         text-align: center;
-        height: 79px;
-        padding-top: 75px;
+        /* height: 79px; */
+        padding-top: 45px;
+        /* padding-top: 75px; */
     }
     @media (min-width: 769px) and (max-width: 1024px){
         .meet-group{
-            height: auto;
+            /* height: auto; */
         }
     }
     .meet-label{
@@ -78,11 +81,11 @@ const TeamStyles = styled.aside`
         padding-top: 4px;
     }
     .cards-group{
-        height: 498px;
+        /* height: 498px; */
         display: grid;
         grid-template-columns: repeat(3, 274px);
         grid-column-gap: 100px;
-        padding-top: 40px;
+        /* padding-top: 40px; */
         margin: 40px auto 0 auto;
     }
     @media (min-width: 769px) and (max-width: 1024px){
@@ -113,10 +116,12 @@ const TeamStyles = styled.aside`
             display: grid;
             grid-template-columns: 200px;
             justify-content: space-between;
+            padding-top: 0px;
+             margin: 0px auto 0 auto;
 
         }
         .card-labels{
-            padding: 50px 0;
+            padding: 30px 0;
         }
     }
     .card-labels{
@@ -138,7 +143,7 @@ const TeamStyles = styled.aside`
         display: flex;
         flex-direction: column;
         padding-top: 21px;
-        height: 114px;
+        /* height: 114px; */
     }
     .position{
         font-size: 12px;

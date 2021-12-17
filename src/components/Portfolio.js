@@ -5,7 +5,7 @@ const PortfolioStyles = styled.article`
     max-width: 1224px;
     margin: 0 auto;
     padding-top: 60px;
-    height: 310px;
+    /* height: 310px; */
     display: grid;
     grid-template-rows: 150px;
     justify-content: space-between;
@@ -16,18 +16,17 @@ const PortfolioStyles = styled.article`
     display: flex;
     flex-direction: column;
     padding: 40px;
-    height: auto;
+    /* height: auto; */
 }
 @media (min-width: 481px) and (max-width: 768px){
     display: flex;
     flex-direction: column;
-    height: 200px;
+    /* height: 200px; */
     margin-top: 400px;
 }
 @media (min-width: 320px) and (max-width: 480px){
     display: flex;
     flex-direction: column;
-    /* height: 200px; */
     margin-top: 400px;
 }
     .left{
@@ -69,13 +68,15 @@ const PortfolioStyles = styled.article`
     }
     @media (min-width: 320px) and (max-width: 480px){
         .boxes{
-            width: 84%;
+            width: 80%;
             margin: 0 auto;
             grid-template-columns: repeat(2, 120px);
             grid-template-rows: repeat(2, 120px);
-            grid-row-gap: 50px;
+            grid-gap: 20px;
+            /* grid-row-gap: 20px; */
             /* grid-column-gap: 50px; */
-            justify-content: space-between;
+            /* justify-content: space-between; */
+            /* grid-column-gap: 20px; */
         }
     }
 

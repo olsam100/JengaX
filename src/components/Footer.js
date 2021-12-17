@@ -4,10 +4,10 @@ import styled from 'styled-components';
 
 const FooterStyles = styled.footer`
     margin: 0 auto;
-    padding-bottom: 56px;
+    padding-bottom: 36px;
     width: 100%;
     max-width: 1224px;
-    padding-top: 100px;
+    padding-top: 60px;
     @media (max-width: 1024px){
         width: 100%;
         /* margin: 0 auto; */
@@ -79,26 +79,7 @@ const FooterStyles = styled.footer`
             width: 50%;
         }
     }
-    @media (min-width: 481px) and (max-width: 768px){
-        .left,
-        .right{
-            /* width: 100%; */
-            /* display: flex; */
-            /* flex-direction: column; */
-            /* justify-content: space-between; */
-            /* align-items: center; */
-            /* text-align: center; */
-        }
-        /* .one{
-            width: 50%;
-            text-align: center;
-        } */
-        /* .build{
-            width: 50%;
-            justify-content: center;
-            align-self: center;
-        } */
-    }
+    
     @media (min-width: 320px) and (max-width: 480px){
         
         .right{
@@ -167,6 +148,17 @@ const FooterStyles = styled.footer`
     .one{
         display: flex;
         align-items: center;
+        padding-right: 20px;
+    }
+    @media (min-width: 481px) and (max-width: 768px){
+        
+       
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+       .one{
+           padding-right: 0;
+       } 
+       
     }
 
     .build{
@@ -180,7 +172,6 @@ const FooterStyles = styled.footer`
         margin-block-end: 0;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
-        width: 320px;
     }
     @media (min-width: 320px) and (max-width: 480px){
         .right{
