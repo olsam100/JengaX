@@ -19,6 +19,13 @@ const ButtonGroupStyles = styled.div`
         padding-left: 0;
         display: flex;
     }
+    @media (min-width: 320px) and (max-width: 480px){
+        margin: 50px auto 0 auto;
+        width: 80%;
+        padding-left: 0;
+        display: flex;
+        /* padding-top: 20px; */
+    }
 
     @media (min-width: 481px) and (max-width: 768px){
         .group111{
@@ -27,6 +34,21 @@ const ButtonGroupStyles = styled.div`
         }
         .btn{
             margin: 10px;
+        }
+
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        .group111{
+            width: 100%;
+            margin: 10px auto;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+        }
+        .btn{
+            margin: 10px;
+
         }
 
     }
