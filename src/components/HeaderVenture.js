@@ -96,6 +96,7 @@ const HeaderStyles = styled.header`
         line-height: 36px;
         max-width: 100%;
         padding: 0 20px;
+        text-align: center;
     }
 }
 .imagebox{

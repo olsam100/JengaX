@@ -55,6 +55,12 @@ const MissionStyles = styled.section`
     .text{
         width: 65%;
     }
+    @media (min-width: 320px) and (max-width: 480px){
+        .text{
+            text-align: center;
+            width: 100%;
+        }
+    }
     @media (min-width: 769px) and (max-width: 1024px){
         .group2{
             width: 86%;
@@ -139,8 +145,8 @@ const MissionStyles = styled.section`
     }
     @media (min-width: 320px) and (max-width: 480px){
         .group1{
+            width: 100%;
             display: flex;
-            justify-content: space-between;
         }
     }
     svg{
@@ -216,6 +222,7 @@ const MissionStyles = styled.section`
         .empty{
             width: 100%;
             margin: 0 auto;
+            display: none;
 
         }
     }
