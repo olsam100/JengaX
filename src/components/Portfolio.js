@@ -71,11 +71,11 @@ const PortfolioStyles = styled.article`
         .boxes{
             width: 84%;
             margin: 0 auto;
-            grid-template-columns: repeat(2, 80px);
-            grid-template-rows: repeat(2, 80px);
+            grid-template-columns: repeat(2, 120px);
+            grid-template-rows: repeat(2, 120px);
             grid-row-gap: 50px;
-            grid-column-gap: 50px;
-            /* justify-content: space-between; */
+            /* grid-column-gap: 50px; */
+            justify-content: space-between;
         }
     }
 
