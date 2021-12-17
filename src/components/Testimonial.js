@@ -9,13 +9,13 @@ const TestimonialStyles = styled.div`
         /* grid-column-gap: 73px; */
         justify-content: space-between;
     }
-    @media (max-width: 1024px){
+    @media (min-width: 769px) and (max-width: 1024px){
         .testimonial{
             display: flex;
             flex-direction: column;
         }
     }
-    @media (max-width: 768px){
+    @media (min-width: 481px) and (max-width: 768px){
         .testimonial{
             display: flex;
             flex-direction: column;
@@ -28,7 +28,7 @@ const TestimonialStyles = styled.div`
             margin: 0 auto;
         }   
     }
-    @media (max-width: 1024px){
+    @media (min-width: 769px) and (max-width: 1024px){
         .share-idea{
             margin: 0 auto;
         }
@@ -45,8 +45,14 @@ const TestimonialStyles = styled.div`
         border-radius: 100px;
         margin-top: 32px;
     }
+    @media (min-width: 320px) and (max-width: 480px){
+        .buttonwrapper{
+            justify-content: center;
+        }
+    }
     button,
-    a.secondary{
+    a.secondary-link,
+    a{
         width: 300px;
         display: flex;
         align-items: center;
@@ -60,6 +66,18 @@ const TestimonialStyles = styled.div`
         border-width: 0px;
         border-style: unset;
     }
+    @media (min-width: 320px) and (max-width: 480px){
+        button{
+            font-size: 14px;
+        }
+    }
+    
+    @media (min-width: 320px) and (max-width: 480px){
+        a{
+            font-size: 14px;
+
+        }
+    }
     .group214{
         display: grid;
         grid-template-columns: repeat(4, 150px);
@@ -67,13 +85,13 @@ const TestimonialStyles = styled.div`
         /* justify-content: space-between; */
         grid-column-gap: 68px;
     }
-    @media (max-width: 1024px){
+    @media (min-width: 769px) and (max-width: 1024px){
         .group214{
             margin: 0 auto;
             padding-top: 50px;
         }
     }
-    @media (max-width: 768px){
+    @media (min-width: 481px) and (max-width: 768px){
         .group214{
             width: 100%;
             grid-template-columns: repeat(4, 100px);
@@ -84,12 +102,12 @@ const TestimonialStyles = styled.div`
     }
     @media (min-width: 320px) and (max-width: 480px){
         .group214{
-            grid-template-rows: repeat(2, 150px);
-            grid-template-columns: repeat(2, 150px);
+            grid-template-rows: repeat(2, 100px);
+            grid-template-columns: repeat(2, 100px);
             grid-row-gap: 34px;
             grid-column-gap: 20px;
-            justify-content: space-evenly;
-            /* margin: 0 auto; */
+            justify-content: space-between;
+            margin-top: 30px;
         }   
     }
     .rectangle{
@@ -105,7 +123,7 @@ const TestimonialStyles = styled.div`
         line-height: 50px;
         color: #03060B;
     }
-    @media (max-width: 1024px){
+    @media (min-width: 769px) and (max-width: 1024px){
         .share-paraph{
             /* font-size: 32px; */
         }
@@ -114,6 +132,7 @@ const TestimonialStyles = styled.div`
         .share-paraph{
             font-size: 24px;
             line-height: 36px;
+            text-align: center;
         }   
     }
     
@@ -128,7 +147,7 @@ function Testimonial(){
                 </p>
                 <div className="buttonwrapper">
                     <button className="secondary">
-                        <Link to="/venture" className="secondary">Learn more about our ventures
+                        <Link to="/venture">Learn more about our ventures
                             <span>
                                 <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M3.29289 5.50001L0 2.20712L1.41421 0.792908L6.12132 5.50001L1.41421 10.2071L0 8.79291L3.29289 5.50001Z" fill="#5974AA"/>

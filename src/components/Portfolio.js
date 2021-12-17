@@ -10,7 +10,26 @@ const PortfolioStyles = styled.article`
     grid-template-rows: 150px;
     justify-content: space-between;
     grid-template-columns: 35% 65%;
-
+@media (min-width: 769px) and (max-width: 1024px){
+    width: 96%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    height: auto;
+}
+@media (min-width: 481px) and (max-width: 768px){
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    margin-top: 400px;
+}
+@media (min-width: 320px) and (max-width: 480px){
+    display: flex;
+    flex-direction: column;
+    /* height: 200px; */
+    margin-top: 400px;
+}
     .left{
         display: flex;
         align-self: center;
@@ -29,8 +48,35 @@ const PortfolioStyles = styled.article`
         display: grid;
         grid-template-columns: repeat(4, 150px);
         justify-content: space-between;
-
-        
+    }
+    @media (min-width: 769px) and (max-width: 1024px){
+        .boxes{
+            grid-template-columns: repeat(4, 120px);
+            grid-template-rows: 120px;
+            grid-column-gap: 20px;
+        }
+    }
+    @media (min-width: 481px) and (max-width: 768px){
+        .boxes{
+            width: 84%;
+            margin: 0 auto;
+            grid-template-columns: repeat(2, 150px);
+            grid-template-rows: repeat(2, 150px);
+            grid-row-gap: 50px;
+            grid-column-gap: 50px;
+            justify-content: space-between;
+        }
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        .boxes{
+            width: 84%;
+            margin: 0 auto;
+            grid-template-columns: repeat(2, 80px);
+            grid-template-rows: repeat(2, 80px);
+            grid-row-gap: 50px;
+            grid-column-gap: 50px;
+            /* justify-content: space-between; */
+        }
     }
 
     .rectangle{

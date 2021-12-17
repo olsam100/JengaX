@@ -5,11 +5,34 @@ const TeamStyles = styled.aside`
     height: 766px;
     width: 100%;
     background-color: #F8FCFF;
+    @media (min-width: 481px) and (max-width: 768px){
+        /* margin-top: 200px; */
+        height: 600px;
+    }
 
     .container{
         max-width: 1224px;
         margin: 0 auto;
         height: 617px;
+    }
+    @media (min-width: 769px) and (max-width: 1024px){
+        .container{
+            width: 100%;
+        }
+    }
+    @media (min-width: 481px) and (max-width: 768px){
+        .container{
+            height: 600px;
+            width: 100%;
+            margin-top: 200px;
+        }
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        .container{
+            height: 600px;
+            width: 100%;
+            margin-top: 200px;
+        }
     }
 
     .group117{
@@ -17,12 +40,27 @@ const TeamStyles = styled.aside`
         flex-direction: column;
         height: 617px;
     }
+    @media (min-width: 769px) and (max-width: 1024px){
+        .group117{
+            height: auto;
+        }
+    }
+    @media (min-width: 481px) and (max-width: 768px){
+        .group117{
+            height: auto;
+        }
+    }
     .meet-group{
         display: flex;
         flex-direction: column;
         text-align: center;
         height: 79px;
         padding-top: 75px;
+    }
+    @media (min-width: 769px) and (max-width: 1024px){
+        .meet-group{
+            height: auto;
+        }
     }
     .meet-label{
         font-size: 26px;
@@ -47,14 +85,53 @@ const TeamStyles = styled.aside`
         padding-top: 40px;
         margin: 40px auto 0 auto;
     }
+    @media (min-width: 769px) and (max-width: 1024px){
+        .cards-group{
+            margin: 0;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 200px);
+            grid-column-gap: 40px;
+            justify-content: center;
+            align-items: center;
+            /* justify-content: space-between; */
+        }
+    }
+    @media (min-width: 481px) and (max-width: 768px){
+        .cards-group{
+            display: grid;
+            grid-template-columns: 200px;
+            justify-content: space-between;
+
+        }
+        .card-labels{
+            padding: 50px 0;
+        }
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        .cards-group{
+            display: grid;
+            grid-template-columns: 200px;
+            justify-content: space-between;
+
+        }
+        .card-labels{
+            padding: 50px 0;
+        }
+    }
     .card-labels{
         display: flex;
         flex-direction: column;
     }
     .cardbox{
-        width: 274px;
+        min-width: 200px;
         height: 363px;
         background-color: #4e4e4e;
+    }
+    @media (min-width: 769px) and (max-width: 1024px){
+        .cardbox{
+            min-width: 120px;
+        }
     }
 
     .detailed-info{
@@ -88,6 +165,16 @@ const TeamStyles = styled.aside`
         /* height: 64px; */
         padding-top: 12px;
         line-height: 25px;
+    }
+    @media (min-width: 769px) and (max-width: 1024px){
+        .long-words{
+            width: 200px;
+        }
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        .long-words{
+            width: 200px;
+        }
     }
 `;
 

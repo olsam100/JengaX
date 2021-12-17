@@ -8,9 +8,27 @@ const ButtonGroupStyles = styled.div`
     width: 100%;
     padding-top: 80px;
     max-width: 1224px;
+    @media (min-width: 769px) and (max-width: 1200px){
+        margin: 0 auto;
+        width: 80%;
+        padding-left: 0;
+    }
+    @media (min-width: 481px) and (max-width: 768px){
+        margin: 0 auto;
+        width: 80%;
+        padding-left: 0;
+        display: flex;
+    }
 
-    .group111{
-        /* padding-left: 266px; */
+    @media (min-width: 481px) and (max-width: 768px){
+        .group111{
+            width: 100%;
+            margin: 0 auto;
+        }
+        .btn{
+            margin: 10px;
+        }
+
     }
 
     .btn{

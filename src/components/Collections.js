@@ -15,6 +15,12 @@ const CollectionsStyles = styled.div`
         flex-direction: column;
         height: 650px;
     }
+    @media (min-width: 320px) and (max-width: 480px){
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* height: 650px; */
+    }
     section{
         width: 100%;
         display: grid;
@@ -55,6 +61,7 @@ const CollectionsStyles = styled.div`
             width: 100%;
             text-align: center;
             align-items: center;
+            justify-content: center;
         }
     }
     @media (min-width: 320px) and (max-width: 480px){
@@ -78,7 +85,8 @@ const CollectionsStyles = styled.div`
     }
     @media (min-width: 320px) and (max-width: 480px){
         .share-collection{
-            max-width: 100%;
+            /* max-width: 100%; */
+            padding-top: 50px;
             margin: 0 auto;
             display: flex;
             flex-direction: column;
@@ -125,7 +133,9 @@ const CollectionsStyles = styled.div`
             flex-direction: column;
             width: 100%;
             align-items: center;
-            justify-content: center;
+            /* justify-content: center; */
+            height: 580px;
+            justify-content: space-between;
         }   
     }
     @media (min-width: 320px) and (max-width: 480px){
@@ -237,7 +247,27 @@ const CollectionsStyles = styled.div`
         border-width: 0px;
         border-style: unset;
     }
-    @media (max-width: 768px){
+    @media (min-width: 320px) and (max-width: 480px){
+        button{
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        a.secondary{
+            font-size: 14px;
+        }
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        .secondary{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+    @media (min-width: 481px) and (max-width: 768px){
         .group201,
         .group202,
         .group203{
@@ -245,7 +275,7 @@ const CollectionsStyles = styled.div`
             flex-direction: column;
         }
     }
-    @media (max-width: 768px){
+    @media (min-width: 481px) and (max-width: 768px){
         .heading1{
 
         }
@@ -255,8 +285,10 @@ const CollectionsStyles = styled.div`
         .group202,
         .group203{
             display: flex;
-            align-items: center;
+            /* align-items: center; */
             justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
         }
     }
 `;

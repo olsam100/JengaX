@@ -13,7 +13,7 @@ const FooterStyles = styled.footer`
         /* margin: 0 auto; */
     }
     @media (min-width: 481px) and (max-width: 768px){
-        width: 90%;
+        /* width: 90%; */
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -28,6 +28,11 @@ const FooterStyles = styled.footer`
         max-width: 1224px;
         margin: 0 auto;
     }
+    .left,
+    .right{
+        display: flex;
+        justify-content: space-between;
+    }
     @media (min-width: 769px) and (max-width: 1024px){
         .footer-container{
             flex-direction: column;
@@ -35,9 +40,12 @@ const FooterStyles = styled.footer`
     }
     @media (min-width: 481px) and (max-width: 768px){
         .footer-container{
-            width: 100%;
+            width: 86%;
+            height: 100%;
+            margin: 0 auto;
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
         }
     }
     @media (min-width: 320px) and (max-width: 480px){
@@ -60,10 +68,36 @@ const FooterStyles = styled.footer`
         }
     }
     @media (min-width: 481px) and (max-width: 768px){
+        .right{
+            width: 100%;
+            display: flex;
+        }
+        .one{
+            width: 50%;
+        }
+        .build{
+            width: 50%;
+        }
+    }
+    @media (min-width: 481px) and (max-width: 768px){
         .left,
         .right{
-            justify-content: space-between;
+            /* width: 100%; */
+            /* display: flex; */
+            /* flex-direction: column; */
+            /* justify-content: space-between; */
+            /* align-items: center; */
+            /* text-align: center; */
         }
+        /* .one{
+            width: 50%;
+            text-align: center;
+        } */
+        /* .build{
+            width: 50%;
+            justify-content: center;
+            align-self: center;
+        } */
     }
     @media (min-width: 320px) and (max-width: 480px){
         
@@ -160,6 +194,9 @@ const FooterStyles = styled.footer`
             font-size: 12px;
             text-align: center;
         }
+        .two{
+            margin-top: 20px;
+        }
     }
     span{
         padding-left: 5px;
@@ -199,7 +236,9 @@ const FooterStyles = styled.footer`
             display: flex;
         }
         .one{
+            width: 50%;
             margin: 0 auto;
+            text-align: center;
         }
     }
 `;

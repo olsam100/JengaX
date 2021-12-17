@@ -28,8 +28,9 @@ const NavStyles = styled.nav`
     }
     @media (min-width: 769px) and (max-width: 1024px){
         .nav-top{
-            max-width: 824px;
+            /* max-width: 824px; */
             margin: 0 auto;
+            width: 86%;
         }
         .hamburger{
             display: none;
@@ -37,7 +38,11 @@ const NavStyles = styled.nav`
     }
     @media (min-width: 481px) and (max-width: 768px){
         .nav-top{
-            max-width: 678px;
+            width: 86%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* max-width: 678px; */
             margin: 0 auto;
         }
         .hamburger{
@@ -56,7 +61,6 @@ const NavStyles = styled.nav`
             top: 0;
             right: 0;
             /* height: 500px; */
-            display: none;
         }
         .hamburger{
             display: flex;
@@ -64,12 +68,12 @@ const NavStyles = styled.nav`
             padding-left: 50px;
             
         }
-        svg{
+        /* svg{
             width: 5rem;
             height: 5rem;
             top: rem;
             right: 5rem;
-        }
+        } */
     }
     @media (max-width: 320px){
         .nav-top{
@@ -91,6 +95,12 @@ const NavStyles = styled.nav`
     @media (min-width: 320px) and (max-width: 480px){
         menu{
             width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 0 auto;
             /* justify-content: space-between; */
         }
     }
@@ -99,9 +109,25 @@ const NavStyles = styled.nav`
         display: flex;
         align-items: center;
     }
+    @media (min-width: 320px) and (max-width: 480px){
+        ul{
+            display: flex;
+            height: 120px;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
     li{
         list-style: none;
         margin-left: 30px;
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        li{
+            margin-left: 0;
+        }
     }
     
     a{
@@ -128,6 +154,20 @@ const NavStyles = styled.nav`
         color: #ffffff;
         border-width: 0px;
         border-style: unset;
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            letter-spacing: 1%;
+            font-style: 600;
+            font-family: 'Graphik';
+            color: #ffffff;
+            border-width: 0px;
+            border-style: unset;
+        }
     }
     span{
         padding-left: 8px;

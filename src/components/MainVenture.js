@@ -5,12 +5,13 @@ import Portfolio from "./Portfolio";
 import Team from "./Team";
 
 const MainVentureStyles = styled.main`
-width: 100%;
+    width: 100%;
     padding-top: 50px;
     height: 1908px;
-    /* margin: 0 auto; */
-    /* max-width: 1333px; */
-
+    @media (min-width: 481px) and (max-width: 768px){
+        /* display: flex; */
+        /* flex-direction: column; */
+    }
 `;
 
 const styleMission = {

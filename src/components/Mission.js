@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const MissionStyles = styled.section`
+
     display: grid;
     grid-template-rows: repeat(3, 120px);
     grid-template-rows: 250px;
@@ -9,6 +10,22 @@ const MissionStyles = styled.section`
     margin: 0 auto;
     max-width: 1224px;
     justify-content: space-between;
+    @media (min-width: 481px) and (max-width: 768px){
+        display: flex;
+        flex-direction: column;
+        height: 700px;
+        justify-content: space-between;
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        height: 700px;
+        justify-content: space-between;
+    }
+    
+    
     
 
     .group2{
@@ -18,12 +35,69 @@ const MissionStyles = styled.section`
         justify-content: space-between;
         align-items: center;
     }
+    @media (min-width: 769px) and (max-width: 1024px){
+        .group2{
+            width: 86%;
+            height: 310px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    @media (min-width: 481px) and (max-width: 768px){
+        .group2{
+            width: 86%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        .group2{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
     .group3{
         max-width: 1224px;
         display: grid;
         grid-template-columns: 35% 65%;
         justify-content: space-between;
         align-items: center;
+    }
+    @media (min-width: 769px) and (max-width: 1024px){
+        .group3{
+            width: 86%;
+            height: 310px;
+            margin: 30px auto 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: flex-start;
+            /* padding-top: 30px; */
+        }
+    }
+    @media (min-width: 481px) and (max-width: 768px){
+        .group3{
+            width: 86%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        .group3{
+            /* width: 86%;
+            margin: 0 auto; */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
     .group4{
         max-width: 1224px;
@@ -37,6 +111,17 @@ const MissionStyles = styled.section`
         display: flex;
         align-items: center;
     }
+    @media (min-width: 769px) and (max-width: 1024px){
+        .group1{
+            /* margin-top: 40px; */
+        }
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        .group1{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
     svg{
         width: 78.41px;
         height: 78.41px;
@@ -48,6 +133,16 @@ const MissionStyles = styled.section`
         font-family: 'Graphik';
         color: #03060B;
         padding-left: 15px;
+    }
+    @media (min-width: 769px) and (max-width: 1024px){
+        .inner-text{
+            font-size: 18px;
+        }
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        .inner-text{
+            font-size: 12px;
+        }
     }
     .text-parag{
         color: #445B78;
@@ -63,15 +158,46 @@ const MissionStyles = styled.section`
         display: flex;
         flex-wrap: wrap;
     }
+    @media (min-width: 769px) and (max-width: 1024px){
+        .text-parag{
+            font-size: 20px;
+            line-height: 36px;
+            /* padding-top: 50px; */
+        }
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        .text-parag{
+            font-size: 16px;
+            line-height: 36px;
+            /* padding-top: 50px; */
+        }
+    }
     .empty{
         margin-top: 20px;
         max-width: 1224px;
         border: 1px solid #2F9BFF;
         opacity: 0.2;
     }
-    /* .why{
-        width: 302px;
-    } */
+    @media (min-width: 769px) and (max-width: 1024px){
+        .empty{
+            width: 86%;
+            margin: 0 auto;
+        }
+    }
+    @media (min-width: 481px) and (max-width: 768px){
+        .empty{
+            width: 86%;
+            margin: 0 auto;
+
+        }
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        .empty{
+            width: 100%;
+            margin: 0 auto;
+
+        }
+    }
 `;
 
 function Mission(){

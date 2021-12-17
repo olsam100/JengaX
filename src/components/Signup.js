@@ -8,13 +8,13 @@ padding-left: 420px;
     padding-left: 110px;
     margin: 0 auto;
 }
-@media (max-width: 768px){
+@media (min-width: 481px) and (max-width: 768px){
     width: 100%;
     padding-left: 0;
     padding-top: 30px;
 }
 @media (min-width: 320px) and (max-width: 480px){
-    width: 80%;
+    width: 100%;
     padding-left: 0;
     margin: 0 auto;
 }
@@ -23,7 +23,7 @@ aside{
     width: 803px;
     background-color: #5974AA;
 }
-@media (max-width: 768px){
+@media (min-width: 481px) and (max-width: 768px){
     aside{
         max-width: 100%;
     }
@@ -62,6 +62,7 @@ aside{
     @media (min-width: 320px) and (max-width: 480px){
         .supporting{
             padding-right: 0;
+            font-size: 12px;
         }
     }
     .group211{
@@ -83,6 +84,7 @@ aside{
     @media (min-width: 320px) and (max-width: 480px){
         .email-navigation{
             width: 100%;
+            padding-bottom: 10px;
         }
     }
     i{
@@ -113,6 +115,11 @@ aside{
         font-size: 24px;
         color: #ffffff;
     }
+    @media (min-width: 320px) and (max-width: 480px){
+        input{
+            font-size: 16px;
+        }
+    }
 
     input::placeholder{
         color: rgba(255, 255, 255, 0.43);
@@ -120,6 +127,11 @@ aside{
         font-family: 'Graphik';
         font-weight: 500;
         margin-top: 20px;
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        input::placeholder{
+            font-size: 16px;
+        }
     }
     
 `;

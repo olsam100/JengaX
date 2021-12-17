@@ -30,13 +30,18 @@ const HeaderStyles = styled.header`
 }
 @media (min-width: 481px) and (max-width: 768px){
     .header-items{
+        height: 540px;
         width: 100%;
-        grid-template-columns: 30% 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 0;
+        /* grid-template-columns: 30% 70%; */
     }
 }
 @media (min-width: 320px) and (max-width: 480px){
     .header-items{
-        max-width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     height: auto;
@@ -67,25 +72,27 @@ const HeaderStyles = styled.header`
 }
 @media (min-width: 769px) and (max-width: 1024px){
     .capital{
-        max-width: 520px;
-        padding-left: 100px;
-        font-size: 60px;
+        max-width: 400px;
+        padding-left: 60px;
+        font-size: 24px;
         padding-top: 50px;
-        line-height: 70px;
+        line-height: 40px;
     }
 }
 @media (min-width: 481px) and (max-width: 768px){
     .capital{
-        font-size: 48px;
+        font-size: 18px;
         line-height: 54px;
-        max-width: 400px;
+        /* max-width: 400px; */
         padding-top: 50px;
-        padding-left: 50px;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
     }
 }
 @media (min-width: 320px) and (max-width: 480px){
     .capital{
-        font-size: 24px;
+        font-size: 16px;
         line-height: 36px;
         max-width: 100%;
         padding: 0 20px;
@@ -111,18 +118,8 @@ const HeaderStyles = styled.header`
     }
 }
 @media (min-width: 320px) and (max-width: 480px){
-    .capital{
-        font-size: 36px;
-        line-height: 54px;
-        padding: 0 50px;
-        width: 480px;
-        text-align: center;
-        left: 0;
-    }
     img{
         max-width: 100%;
-        padding-top: 50px;
-        margin-top: 50px;
     }
 }
 

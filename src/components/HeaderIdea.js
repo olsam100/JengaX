@@ -9,11 +9,25 @@ const HeaderIdeaStyles = styled.header`
     background-image: linear-gradient(#B2D9FB, #ffffff);
     display: flex;
     flex-direction: column;
+    
+    
 
 .header-items{
     display: flex;
     flex-direction: column;
     padding-top: 121px;
+}
+@media (min-width: 769px) and (max-width: 1024px){
+    .header-items{
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px){
+    .header-items{
+        margin: 0 auto;
+        width: 100%;
+    }
 }
 .group216{
     max-width: 578px;
@@ -21,6 +35,12 @@ const HeaderIdeaStyles = styled.header`
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+}
+@media (min-width: 481px) and (max-width: 768px){
+    .group216{
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 .informative{
     font-size: 36px;
@@ -52,6 +72,19 @@ p{
 }
 .group193{
     padding-top: 40px;
+}
+@media (min-width: 481px) and (max-width: 768px){
+    .group193{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    input{
+        width: 55%;
+    }
+    .btn{
+        width: 35%;
+    }
 }
 input{
     width: 420px;

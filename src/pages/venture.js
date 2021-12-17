@@ -13,6 +13,9 @@ const VentureStyles = styled.main`
     height: 2615px;
     /* max-width: 1440px; */
     margin: 0 auto;
+    @media (min-width: 481px) and (max-width: 768px){
+        height: 3000px;
+    }
 `;
 
 function Venture(){

@@ -12,27 +12,88 @@ const MainStyles = styled.main`
     margin: 0 auto;
     height: 1155px;
     /* padding-left: 266px; */
-
+    @media (min-width: 769px) and (max-width: 1024px){
+        width: 100%;
+    }
+    @media (min-width: 481px) and (max-width: 768px){
+        width: 100%;
+        height: auto;
+        display: flex;
+        
+    }
     .group217{
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: repeat(5, 199px);
         grid-row-gap: 40px;
     }
-
+    @media (min-width: 769px) and (max-width: 1024px){
+        .group217{
+            width: 86%;
+            margin: 0 auto;
+        }
+    }
+    @media (min-width: 481px) and (max-width: 768px){
+        .group217{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
     .detailedGroup{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
+    @media (min-width: 769px) and (max-width: 1024px){
+       .detailedGroup{
+           width: 100%;
+       }
+    }
+    @media (min-width: 481px) and (max-width: 768px){
+    .detailedGroup{
+        width: 100%;
+    }
+}
 
     .groups{
         height: 163px;
         display: flex;
     }
+    @media (min-width: 769px) and (max-width: 1024px){
+        .groups{
+            width: 100%;   
+        }
+    }
+    @media (min-width: 481px) and (max-width: 768px){
+        .groups{
+            display: flex;
+            flex-direction: column;
+            height: 300px;
+            justify-content: space-between;
+        }
+    }
+    @media (min-width: 769px) and (max-width: 1024px){
+        .image-card{
+            /* max-width: 100%; */
+            /* flex-basis: 30%; */
+            width: 30%;
+        }   
+        .image-holder{
+            max-width: 100%;
+            height: 100%;
+        }
+    }
     .line{
         border: 1px solid #445B78;
         opacity: 12%;
+    }
+    @media (min-width: 481px) and (max-width: 768px){
+        .line{
+            margin-top: 30px;
+        }
     }
 
     .offline{
@@ -40,6 +101,18 @@ const MainStyles = styled.main`
         flex-direction: column;
         margin-left: 37px;
         justify-content: space-between;
+    }
+    @media (min-width: 769px) and (max-width: 1024px){
+        .offline{
+            width: 70%;
+        }   
+    }
+    @media (min-width: 481px) and (max-width: 768px){
+        .offline{
+            margin-left: 0;
+            height: 220px;
+            padding-top: 30px;
+        }   
     }
     .one{
         font-size: 11px;
@@ -50,6 +123,7 @@ const MainStyles = styled.main`
         letter-spacing: 2px;
         text-transform: uppercase;
     }
+    
     .secondary{
     border-radius: 100px;
     border:  1px solid #7D809F;
@@ -73,15 +147,45 @@ const MainStyles = styled.main`
         color: #03060B;
         line-height: 30px;
     }
+    @media (min-width: 769px) and (max-width: 1024px){
+        .making{
+            font-size: 18px;
+        }   
+    }
     .four{
         height: 49px;
         width: 650px;
+    }
+    @media (min-width: 769px) and (max-width: 1024px){
+        .four{
+            width: 100%;
+        }
+    }
+    @media (min-width: 481px) and (max-width: 768px){
+        .four{
+            width: 100%;
+        }
     }
     .Africa{
         font-size: 18px;
         font-weight: 400;
         font-style: normal;
         font-family: 'Graphik';
+    }
+    @media (min-width: 769px) and (max-width: 1024px){
+        .Africa{
+            font-size: 14px;
+            height: 80px;
+            width: 100%;
+        }   
+    }
+    @media (min-width: 481px) and (max-width: 768px){
+        .Africa{
+            font-size: 12px;
+            line-height: 18px;
+            /* height: 80px; */
+            width: 100%;
+        }   
     }
 
     .read-more{
@@ -101,9 +205,33 @@ const MainStyles = styled.main`
         line-height: 21.12px;
         align-items: center;
     }
+    @media (min-width: 481px) and (max-width: 768px){
+        .read-more{
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+    }
     i{
         padding-left: 8px;
         margin-bottom: 0px;
+    }
+    @media (min-width: 481px) and (max-width: 768px){
+        
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        i{
+            max-width: 100%;
+            padding-top: 8px;
+        }
+        .img-fluid{
+            padding-top: 5px;
+            margin-top: 8px;
+        }
+        img{
+            padding-top: 5px;
+        }
     }
     
 `;
@@ -113,8 +241,8 @@ function Information(){
         <div className="group217">
             <div className="detailedGroup">
                 <div className="groups">
-                    <div>
-                        <Image src={imageBadge} fluid alt="image badge"/>
+                    <div className="image-card">
+                        <Image src={imageBadge} fluid alt="image badge" className="image-holder"/>
                         {/* <img src={imageBadge} alt="image badge"/> */}
                     </div>
                     <div className="offline">
