@@ -28,12 +28,32 @@ const MissionStyles = styled.section`
     
     
 
-    .group2{
+    /* .group2{
         max-width: 1224px;
         display: grid;
         grid-template-columns: 35% 65%;
         justify-content: space-between;
         align-items: center;
+    } */
+    .group2{
+        max-width: 1224px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .group3{
+        max-width: 1224px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .group1{
+        width: 35%;
+        display: flex;
+        align-items: center;
+    }
+    .text{
+        width: 65%;
     }
     @media (min-width: 769px) and (max-width: 1024px){
         .group2{
@@ -107,10 +127,11 @@ const MissionStyles = styled.section`
         justify-content: space-between;
         align-items: center;
     }
-    .group1{
+    /* .group1{
         display: flex;
-        align-items: center;
-    }
+        right: 0;
+        top: 0;
+    } */
     @media (min-width: 769px) and (max-width: 1024px){
         .group1{
             /* margin-top: 40px; */
@@ -212,7 +233,7 @@ function Mission(){
                     <p className="inner-text">What we do</p>
 
                 </div>
-                <div>
+                <div className="text">
                     <p className="text-parag">
                         We are a seed-stage fund founded by entrepreneurs who understand the nuances
                         of building in developing markets. Beyond early capital, we share our vast strategic, 
@@ -222,7 +243,7 @@ function Mission(){
                     </p>
                 </div>
             </div>
-            <div className="group3">
+            <div className="group2">
                 <div className="group1">
                     <svg width="80" height="82" viewBox="0 0 80 82" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M39.842 79.8419C61.4954 79.8419 79.049 62.2883 79.049 40.6349C79.049 18.9815 61.4954 1.42792 39.842 1.42792C18.1886 1.42792 0.63501 18.9815 0.63501 40.6349C0.63501 62.2883 18.1886 79.8419 39.842 79.8419Z" stroke="#C4C4C4"/>
@@ -232,7 +253,7 @@ function Mission(){
                     <p className="inner-text">Our philosophy</p>
 
                 </div>
-                <div>
+                <div className="text">
                     <p className="text-parag">
                         We created JengaX Ventures to back builders in developing markets with smart capital. 
                         We value partnerships with founders who are deeply passionate about creating and capturing 
