@@ -113,14 +113,14 @@ const HeaderStyles = styled.header`
     .capital{
         font-size: 36px;
         line-height: 54px;
-        padding: 0 50px;
+        /* padding: 0 50px; */
         width: 480px;
         text-align: center;
         left: 0;
     }
     img{
         max-width: 100%;
-        padding-top: 50px;
+        /* padding-top: 50px; */
         margin-top: 50px;
     }
 }
