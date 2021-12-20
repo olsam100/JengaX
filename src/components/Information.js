@@ -24,18 +24,10 @@ const MainStyles = styled.main`
         width: 100%;
         height: auto;
         display: flex;
+        padding-top: 30px;
     }
 
-    .group217{
-         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 80%;
-        margin: 0 auto;
-        align-items: center;
-        text-align: center;
-        grid-row-gap: 40px; 
-    }
+    
     @media (min-width: 481px) and (max-width: 768px){
         .group217{
             display: flex;
@@ -55,6 +47,17 @@ const MainStyles = styled.main`
         grid-template-rows: repeat(5, 199px);
         grid-row-gap: 40px;
         }
+    }
+
+    .group217{
+         display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
+        grid-row-gap: 40px; 
     }
     
 
@@ -102,7 +105,7 @@ const MainStyles = styled.main`
             flex-direction: column;
             height: 320px;
             justify-content: space-between;
-            margin-top: 30px;
+            /* margin-top: 30px; */
         }
     }
     @media (min-width: 769px) and (max-width: 1024px){
@@ -125,6 +128,7 @@ const MainStyles = styled.main`
     .line{
         border: 1px solid #445B78;
         opacity: 12%;
+        margin-top: 42px;
     }
     @media (min-width: 481px) and (max-width: 768px){
         .line{
@@ -331,7 +335,6 @@ const MainStyles = styled.main`
         .img-fluid{
             padding-top: 0px;
             margin-top: 0px;
-            margin-bottom: 20px;
         }
         img{
             /* padding-top: 5px; */
@@ -357,7 +360,6 @@ function Information(){
                 <div className="groups">
                     <div className="image-card">
                         <Image src={imageBadge} fluid alt="image badge" className="image-holder"/>
-                        {/* <img src={imageBadge} alt="image badge"/> */}
                     </div>
                     <div className="offline">
                         <div className="one"><p>October 21, 2021</p></div>
@@ -376,9 +378,8 @@ function Information(){
             </div>
             <div className="detailedGroup">
                 <div className="groups">
-                    <div>
+                    <div className="image-card">
                         <Image src={imageBadge} fluid alt="image badge"/>
-                        {/* <img src={imageBadge} alt="image badge"/> */}
                     </div>
                     <div className="offline">
                         <div className="one"><p>October 21, 2021</p></div>
@@ -397,9 +398,8 @@ function Information(){
             </div>
             <div className="detailedGroup">
                 <div className="groups">
-                    <div>
+                    <div className="image-card">
                         <Image src={imageBadge} fluid alt="image badge"/>
-                        {/* <img src={imageBadge} alt="image badge"/> */}
                     </div>
                     <div className="offline">
                         <div className="one"><p>October 21, 2021</p></div>
@@ -418,9 +418,8 @@ function Information(){
             </div>
             <div className="detailedGroup">
                 <div className="groups">
-                    <div>
+                    <div className="image-card">
                         <Image src={imageBadge} fluid alt="image badge"/>
-                        {/* <img src={imageBadge} alt="image badge"/> */}
                     </div>
                     <div className="offline">
                         <div className="one"><p>October 21, 2021</p></div>
@@ -439,9 +438,8 @@ function Information(){
             </div>
             <div className="detailedGroup">
                 <div className="groups">
-                    <div>
+                    <div className="image-card">
                         <Image src={imageBadge} fluid alt="image badge"/>
-                        {/* <img src={imageBadge} alt="image badge"/> */}
                     </div>
                     <div className="offline">
                         <div className="one"><p>October 21, 2021</p></div>
