@@ -2,14 +2,19 @@ import React from "react";
 import styled from "styled-components";
 
 const PortfolioStyles = styled.article`
-    max-width: 1224px;
-    margin: 0 auto;
-    padding-top: 60px;
-    /* height: 310px; */
-    display: grid;
-    grid-template-rows: 150px;
-    justify-content: space-between;
-    grid-template-columns: 35% 65%;
+@media (min-width: 320px) and (max-width: 480px){
+    display: flex;
+    flex-direction: column;
+    margin-top: 400px;
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    display: flex;
+    flex-direction: column;
+    /* height: 200px; */
+    margin-top: 400px;
+}
+    
 @media (min-width: 769px) and (max-width: 1024px){
     width: 96%;
     margin: 0 auto;
@@ -18,16 +23,17 @@ const PortfolioStyles = styled.article`
     padding: 40px;
     /* height: auto; */
 }
-@media (min-width: 481px) and (max-width: 768px){
-    display: flex;
-    flex-direction: column;
-    /* height: 200px; */
-    margin-top: 400px;
-}
-@media (min-width: 320px) and (max-width: 480px){
-    display: flex;
-    flex-direction: column;
-    margin-top: 400px;
+
+
+@media (min-width: 1024px){
+    max-width: 1224px;
+    margin: 0 auto;
+    padding-top: 60px;
+    /* height: 310px; */
+    display: grid;
+    grid-template-rows: 150px;
+    justify-content: space-between;
+    grid-template-columns: 35% 65%;
 }
     .left{
         display: flex;
