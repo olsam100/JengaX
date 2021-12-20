@@ -85,6 +85,7 @@ const MainStyles = styled.main`
     .groups{
         height: 163px;
         display: flex;
+        margin-top: 20px;
     }
     @media (min-width: 769px) and (max-width: 1024px){
         .groups{
@@ -131,6 +132,7 @@ const MainStyles = styled.main`
         height: 157px;
         background-color: #000000;
         border-radius: 10px;
+        margin: 0 auto;
     }
     
     .line{
