@@ -59,27 +59,24 @@ const MainStyles = styled.main`
     
 
     
-    .detailedGroup{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    @media (min-width: 769px) and (max-width: 1024px){
-       .detailedGroup{
-           width: 100%;
-       }
-    }
+   
+        .detailedGroup{
+            width: 100%;
+        }
+
     @media (min-width: 481px) and (max-width: 768px){
     .detailedGroup{
         width: 100%;
     }
 }
-    
-    @media (min-width: 320px) and (max-width: 480px){
-        .detailedGroup{
-            width: 100%;
-        }
-    }
+@media (min-width: 769px) {
+   .detailedGroup{
+    display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+   }
+}
+
     
 
     .groups{
