@@ -10,7 +10,7 @@ const MainStyles = styled.main`
     padding-top: 60px;
     max-width: 907.44px;
     margin: 0 auto;
-    height: 1155px;
+    /* height: 1155px; */
     /* padding-left: 266px; */
     @media (min-width: 769px) and (max-width: 1024px){
         width: 100%;
@@ -92,7 +92,7 @@ const MainStyles = styled.main`
         .groups{
             display: flex;
             flex-direction: column;
-            height: 300px;
+            /* height: 300px; */
             justify-content: space-between;
         }
     }
@@ -107,8 +107,6 @@ const MainStyles = styled.main`
     }
     @media (min-width: 769px) and (max-width: 1024px){
         .image-card{
-            /* max-width: 100%; */
-            /* flex-basis: 30%; */
             width: 30%;
         }   
         .image-holder{
@@ -163,7 +161,7 @@ const MainStyles = styled.main`
     @media (min-width: 320px) and (max-width: 480px){
        .offline{
             margin-left: 0;
-            height: 320px;
+            /* height: 320px; */
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -256,7 +254,7 @@ const MainStyles = styled.main`
         .Africa{
             font-size: 12px;
             line-height: 18px;
-            /* height: 80px; */
+            height: 80px;
             width: 100%;
         }   
     }
