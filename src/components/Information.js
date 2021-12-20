@@ -124,6 +124,14 @@ const MainStyles = styled.main`
             height: 100%;
         }
     }
+    .image-card{
+        max-width: 100%;
+        /* height: 100%; */
+        width: 208px;
+        height: 157px;
+        background-color: #000000;
+        border-radius: 10px;
+    }
     
     .line{
         border: 1px solid #445B78;
@@ -350,6 +358,12 @@ const MainStyles = styled.main`
         display: flex;
     }
      */
+
+    .img-book{
+        max-width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
     
 `;
 
@@ -359,7 +373,7 @@ function Information(){
             <div className="detailedGroup">
                 <div className="groups">
                     <div className="image-card">
-                        <Image src={imageBadge} fluid alt="image badge" className="image-holder"/>
+
                     </div>
                     <div className="offline">
                         <div className="one"><p>October 21, 2021</p></div>
@@ -379,7 +393,7 @@ function Information(){
             <div className="detailedGroup">
                 <div className="groups">
                     <div className="image-card">
-                        <Image src={imageBadge} fluid alt="image badge"/>
+
                     </div>
                     <div className="offline">
                         <div className="one"><p>October 21, 2021</p></div>
@@ -399,7 +413,7 @@ function Information(){
             <div className="detailedGroup">
                 <div className="groups">
                     <div className="image-card">
-                        <Image src={imageBadge} fluid alt="image badge"/>
+
                     </div>
                     <div className="offline">
                         <div className="one"><p>October 21, 2021</p></div>
@@ -419,7 +433,7 @@ function Information(){
             <div className="detailedGroup">
                 <div className="groups">
                     <div className="image-card">
-                        <Image src={imageBadge} fluid alt="image badge"/>
+
                     </div>
                     <div className="offline">
                         <div className="one"><p>October 21, 2021</p></div>
@@ -439,7 +453,7 @@ function Information(){
             <div className="detailedGroup">
                 <div className="groups">
                     <div className="image-card">
-                        <Image src={imageBadge} fluid alt="image badge"/>
+
                     </div>
                     <div className="offline">
                         <div className="one"><p>October 21, 2021</p></div>
