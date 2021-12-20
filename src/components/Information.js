@@ -27,16 +27,14 @@ const MainStyles = styled.main`
     }
 
     .group217{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(5, 199px);
-        grid-row-gap: 40px;
-    }
-    @media (min-width: 769px) and (max-width: 1024px){
-        .group217{
-            width: 86%;
-            margin: 0 auto;
-        }
+         display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
+        grid-row-gap: 40px; 
     }
     @media (min-width: 481px) and (max-width: 768px){
         .group217{
@@ -47,18 +45,19 @@ const MainStyles = styled.main`
             margin: 0 auto;
         }
     }
-    
-    @media (min-width: 320px) and (max-width: 480px){
+    @media (min-width: 769px) {
         .group217{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            width: 80%;
+            width: 86%;
             margin: 0 auto;
-            align-items: center;
-            text-align: center;
+
+            display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5, 199px);
+        grid-row-gap: 40px;
         }
     }
+    
+
     
     .detailedGroup{
         display: flex;
