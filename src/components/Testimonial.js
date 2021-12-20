@@ -101,8 +101,8 @@ const TestimonialStyles = styled.div`
     }
     @media (min-width: 320px) and (max-width: 480px){
         .group214{
-            grid-template-rows: repeat(2, 120px);
-            grid-template-columns: repeat(2, 120px);
+            grid-template-rows: repeat(2, 150px);
+            grid-template-columns: repeat(2, 150px);
             grid-gap: 20px;
             margin: 30px auto 0 auto;
         }   
