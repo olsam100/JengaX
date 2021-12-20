@@ -68,7 +68,6 @@ const PortfolioStyles = styled.article`
     }
     @media (min-width: 320px) and (max-width: 480px){
         .boxes{
-            width: 80%;
             margin: 0 auto;
             grid-template-columns: repeat(2, 120px);
             grid-template-rows: repeat(2, 120px);

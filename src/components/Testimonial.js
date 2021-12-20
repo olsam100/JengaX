@@ -104,7 +104,7 @@ const TestimonialStyles = styled.div`
             grid-template-rows: repeat(2, 120px);
             grid-template-columns: repeat(2, 120px);
             grid-gap: 20px;
-            margin-top: 30px;
+            margin: 30px auto 0 auto;
         }   
     }
     .rectangle{
