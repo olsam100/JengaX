@@ -52,7 +52,7 @@ const NavStyles = styled.nav`
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    padding-top: 57px;
+    padding-top: 30px;
 }
 
 
