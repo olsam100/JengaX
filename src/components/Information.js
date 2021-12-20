@@ -104,7 +104,7 @@ const MainStyles = styled.main`
         .groups{
             display: flex;
             flex-direction: column;
-            height: 300px;
+            height: 320px;
             justify-content: space-between;
             margin-top: 30px;
         }
@@ -120,13 +120,14 @@ const MainStyles = styled.main`
             height: 100%;
         }
     }
-    /* 
+    
     @media (min-width: 320px) and (max-width: 480px){
-        width: 100%;
-        height: auto;
-        display: flex;
+        .image-holder{
+            max-width: 100%;
+            height: 100%;
+        }
     }
-     */
+    
     .line{
         border: 1px solid #445B78;
         opacity: 12%;
@@ -167,8 +168,9 @@ const MainStyles = styled.main`
        .offline{
             margin-left: 0;
             height: 320px;
-            /* height: 220px; */
-            padding-top: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }   
     }
     
@@ -335,9 +337,13 @@ const MainStyles = styled.main`
         .img-fluid{
             padding-top: 0px;
             margin-top: 0px;
+            margin-bottom: 20px;
         }
         img{
             /* padding-top: 5px; */
+        }
+        .stroke{
+            margin-bottom: 0;
         }
     }
     /* 
@@ -368,7 +374,7 @@ function Information(){
                             <p className="making">Making Mobile offline data</p>
                         </div>
                         <div className="four">
-                            <p className="Africa">Africa has a diverse population of 1.2bn people. According to GSMA, Africa has a diverse population of 1.2bn people. <button type="button" className="read-more">Read more <i><Image src={VectorStroke} fluid /></i></button></p>
+                            <p className="Africa">Africa has a diverse population of 1.2bn people. According to GSMA, Africa has a diverse population of 1.2bn people. <button type="button" className="read-more">Read more <i><Image src={VectorStroke} fluid className="stroke"/></i></button></p>
                         </div>
                     </div>
                 </div>
@@ -389,7 +395,7 @@ function Information(){
                             <p className="making">Making Mobile offline data</p>
                         </div>
                         <div className="four">
-                            <p className="Africa">Africa has a diverse population of 1.2bn people. According to GSMA, Africa has a diverse population of 1.2bn people. <button type="button" className="read-more">Read more <i><Image src={VectorStroke} fluid /></i></button></p>
+                            <p className="Africa">Africa has a diverse population of 1.2bn people. According to GSMA, Africa has a diverse population of 1.2bn people. <button type="button" className="read-more">Read more <i><Image src={VectorStroke} fluid className="stroke"/></i></button></p>
                         </div>
                     </div>
                 </div>
@@ -410,7 +416,7 @@ function Information(){
                             <p className="making">Making Mobile offline data</p>
                         </div>
                         <div className="four">
-                            <p className="Africa">Africa has a diverse population of 1.2bn people. According to GSMA, Africa has a diverse population of 1.2bn people. <button type="button" className="read-more">Read more <i><Image src={VectorStroke} fluid /></i></button></p>
+                            <p className="Africa">Africa has a diverse population of 1.2bn people. According to GSMA, Africa has a diverse population of 1.2bn people. <button type="button" className="read-more">Read more <i><Image src={VectorStroke} fluid className="stroke"/></i></button></p>
                         </div>
                     </div>
                 </div>
@@ -431,7 +437,7 @@ function Information(){
                             <p className="making">Making Mobile offline data</p>
                         </div>
                         <div className="four">
-                            <p className="Africa">Africa has a diverse population of 1.2bn people. According to GSMA, Africa has a diverse population of 1.2bn people. <button type="button" className="read-more">Read more <i><Image src={VectorStroke} fluid /></i></button></p>
+                            <p className="Africa">Africa has a diverse population of 1.2bn people. According to GSMA, Africa has a diverse population of 1.2bn people. <button type="button" className="read-more">Read more <i><Image src={VectorStroke} fluid className="stroke"/></i></button></p>
                         </div>
                     </div>
                 </div>
@@ -452,7 +458,7 @@ function Information(){
                             <p className="making">Making Mobile offline data</p>
                         </div>
                         <div className="four">
-                            <p className="Africa">Africa has a diverse population of 1.2bn people. According to GSMA, Africa has a diverse population of 1.2bn people. <button type="button" className="read-more">Read more <i><Image src={VectorStroke} fluid /></i></button></p>
+                            <p className="Africa">Africa has a diverse population of 1.2bn people. According to GSMA, Africa has a diverse population of 1.2bn people. <button type="button" className="read-more">Read more <i><Image src={VectorStroke} fluid className="stroke" /></i></button></p>
                         </div>
                     </div>
                 </div>

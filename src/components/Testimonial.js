@@ -35,7 +35,6 @@ const TestimonialStyles = styled.div`
     }
     @media (min-width: 320px) and (max-width: 480px){
         .share-idea{
-            padding: 0 30px;
         }
         
     }
@@ -104,8 +103,9 @@ const TestimonialStyles = styled.div`
         .group214{
             grid-template-rows: repeat(2, 100px);
             grid-template-columns: repeat(2, 100px);
-            grid-row-gap: 34px;
-            grid-column-gap: 20px;
+            /* grid-row-gap: 34px; */
+            /* grid-column-gap: 20px; */
+            grid-gap: 20px;
             justify-content: space-between;
             margin-top: 30px;
         }   
@@ -133,6 +133,14 @@ const TestimonialStyles = styled.div`
             font-size: 24px;
             line-height: 36px;
             text-align: center;
+        }   
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        .secondary{
+            width: 100%;
+            /* margin: 0 auto; */
+            /* margin-right: 20px; */
+            margin-left: 20px;
         }   
     }
     
