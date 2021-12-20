@@ -5,7 +5,8 @@ const PortfolioStyles = styled.article`
 @media (min-width: 320px) and (max-width: 480px){
     display: flex;
     flex-direction: column;
-    margin-top: 400px;
+    /* width: 80%; */
+    margin: 30px auto 0 auto;
 }
 
 @media (min-width: 481px) and (max-width: 768px){
@@ -49,16 +50,14 @@ const PortfolioStyles = styled.article`
         align-self: center;
     }
 
-    .boxes{
-        display: grid;
-        grid-template-columns: repeat(4, 150px);
-        justify-content: space-between;
-    }
-    @media (min-width: 769px) and (max-width: 1024px){
-        .boxes{
-            grid-template-columns: repeat(4, 120px);
-            grid-template-rows: 120px;
-            grid-column-gap: 20px;
+    @media (min-width: 320px) and (max-width: 480px){
+        .boxes{ 
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 150px);
+            grid-template-rows: repeat(2, 150px);
+            grid-gap: 20px;
+
         }
     }
     @media (min-width: 481px) and (max-width: 768px){
@@ -72,18 +71,23 @@ const PortfolioStyles = styled.article`
             justify-content: space-between;
         }
     }
-    @media (min-width: 320px) and (max-width: 480px){
+    @media (min-width: 769px) and (max-width: 1024px){
         .boxes{
-            margin: 0 auto;
-            grid-template-columns: repeat(2, 150px);
-            grid-template-rows: repeat(2, 150px);
-            grid-gap: 20px;
-            /* grid-row-gap: 20px; */
-            /* grid-column-gap: 50px; */
-            /* justify-content: space-between; */
-            /* grid-column-gap: 20px; */
+            grid-template-columns: repeat(4, 120px);
+            grid-template-rows: 120px;
+            grid-column-gap: 20px;
         }
     }
+    @media (min-width: 1024px){
+        .boxes{
+            display: grid;
+            grid-template-columns: repeat(4, 150px);
+            justify-content: space-between;
+        }
+    }
+    
+    
+    
 
     .rectangle{
         background-color: #C4C4C4;

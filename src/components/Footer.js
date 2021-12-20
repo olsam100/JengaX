@@ -227,7 +227,6 @@ const FooterStyles = styled.footer`
             display: flex;
         }
         .one{
-            width: 50%;
             margin: 0 auto;
             text-align: center;
         }

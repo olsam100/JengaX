@@ -3,25 +3,27 @@ import styled from "styled-components";
 
 const MissionStyles = styled.section`
 
-    display: grid;
-    grid-template-rows: repeat(3, 120px);
-    grid-template-rows: 250px;
-    grid-row-gap: 60px;
-    margin: 0 auto;
-    max-width: 1224px;
-    justify-content: space-between;
+    @media (min-width: 320px) and (max-width: 480px){
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        /* height: 700px; */
+        justify-content: space-between;
+    }
     @media (min-width: 481px) and (max-width: 768px){
         display: flex;
         flex-direction: column;
         height: 700px;
         justify-content: space-between;
     }
-    @media (min-width: 320px) and (max-width: 480px){
-        width: 80%;
+    @media (min-width: 769px){
+        display: grid;
+        grid-template-rows: repeat(3, 120px);
+        grid-template-rows: 250px;
+        grid-row-gap: 60px;
         margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        height: 700px;
+        max-width: 1224px;
         justify-content: space-between;
     }
     
@@ -35,12 +37,7 @@ const MissionStyles = styled.section`
         justify-content: space-between;
         align-items: center;
     } */
-    .group2{
-        max-width: 1224px;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
+    
     .group3{
         max-width: 1224px;
         display: flex;
@@ -61,6 +58,28 @@ const MissionStyles = styled.section`
             width: 100%;
         }
     }
+   
+   
+    @media (min-width: 320px) and (max-width: 480px){
+        .group2{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .group2:nth-child(2){
+            margin-top: 30px;
+        }
+    }
+    @media (min-width: 481px) and (max-width: 768px){
+        .group2{
+            width: 86%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
+    }
     @media (min-width: 769px) and (max-width: 1024px){
         .group2{
             width: 86%;
@@ -72,19 +91,11 @@ const MissionStyles = styled.section`
             align-items: flex-start;
         }
     }
-    @media (min-width: 481px) and (max-width: 768px){
-        .group2{
-            width: 86%;
-            margin: 0 auto;
+    @media (min-width: 1024px){
+            .group2{
+            max-width: 1224px;
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-    }
-    @media (min-width: 320px) and (max-width: 480px){
-        .group2{
-            display: flex;
-            flex-direction: column;
+            justify-content: space-between;
             align-items: flex-start;
         }
     }

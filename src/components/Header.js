@@ -20,10 +20,11 @@ const HeaderStyles = styled.header`
 @media (min-width: 320px) and (max-width: 480px){
     .header-items{
         max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: space-between;
+        margin-top: 30px;
     }
 }
 @media (min-width: 481px) and (max-width: 768px){
@@ -103,17 +104,8 @@ const HeaderStyles = styled.header`
         width: 100%;
     }
 }
-@media (min-width: 769px) and (max-width: 1024px){
-    img{
 
-        max-width: 100%;
-    }
-}
-@media (min-width: 481px) and (max-width: 768px){
-    img{
-        max-width: 100%;
-    }
-}
+
 @media (min-width: 320px) and (max-width: 480px){
     .capital{
         font-size: 36px;
@@ -126,7 +118,18 @@ const HeaderStyles = styled.header`
     img{
         max-width: 100%;
         /* padding-top: 50px; */
-        margin-top: 50px;
+        /* margin-top: 50px; */
+    }
+}
+@media (min-width: 481px) and (max-width: 768px){
+    img{
+        max-width: 100%;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px){
+    img{
+
+        max-width: 100%;
     }
 }
 

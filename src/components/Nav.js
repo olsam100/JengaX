@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 import '../components/custom.css';
-import { FaBars } from 'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 
 
@@ -56,9 +56,6 @@ const NavStyles = styled.nav`
 }
 
 
- 
-    
-    
     @media (max-width: 320px){
         .nav-top{
 
@@ -108,7 +105,8 @@ const NavStyles = styled.nav`
     }
     @media (min-width: 320px) and (max-width: 480px){
         li{
-            margin-left: 0;
+            /* margin-left: 0; */
+            margin: 5px 0;
         }
     }
     
@@ -155,6 +153,11 @@ const NavStyles = styled.nav`
         padding-left: 8px;
         padding-top: 2px;
     }
+    @media (max-width: 480px){
+        .myButton{
+            /* margin-top: 20px; */
+        }
+    }
     .myButton{
         border-radius: 100px;
         width: 142px;
@@ -194,6 +197,7 @@ const NavStyles = styled.nav`
             width: 70%;
             margin: 0 auto;
             text-align: center;
+            padding-left: 20px;
         }
     }
     .brandlogo{
@@ -227,15 +231,7 @@ const NavStyles = styled.nav`
         position: relative ;
 
     }
-    .span:first-child{
-        transform: ${({showItem}) => showItem ? 'rotate(45deg)' : 'rotate(0)'};
-    }
-    .span:nth-child(2){
-        opacity: ${({showItem}) => showItem ? '0' : '1'};
-    }
-    .span:nth-child(3){
-        transform: ${({showItem}) => showItem ? 'rotate(-45deg)' : 'rotate(0)'};
-    }
+
     
   
          
@@ -246,7 +242,8 @@ const NavStyles = styled.nav`
 
 
 function Nav(){
-const [showItem, setShowItem] = React.useState(false)
+// const [showItem, setShowItem] = React.useState(false)
+const [showItem, setShowItem] = useState(false)
 const toggleItem = () => setShowItem(!showItem)
     return (
      <NavStyles>
@@ -255,20 +252,7 @@ const toggleItem = () => setShowItem(!showItem)
 
                 <div className="logo-container">
                     <Link to="/" className="brandlogo">JengaX</Link>
-                    {/* <div className='hamburger' onClick={toggleItem}>{<FaBars size="30px" style={{}}/>}</div> */}
-                    <div toggleItem={toggleItem } className='hamburger' onClick={toggleItem}>{
-                        <div className='bars'>
-                            <div className='span'/>
-                            <div className='span'/>
-                            <div className='span'/>
-                        </div>
-
-                    }</div>
-                    
-                    
-                   {/* 
-                   width: '100%', height: '100%'
-                   */}
+                    <div className='hamburger' onClick={toggleItem}>{!showItem ? <FaBars size="30px"/> : <FaTimes size="30px"/>}</div>
                 </div>
                 <div className='nav-links'>
                     

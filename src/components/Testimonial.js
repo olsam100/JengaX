@@ -101,10 +101,18 @@ const TestimonialStyles = styled.div`
     }
     @media (min-width: 320px) and (max-width: 480px){
         .group214{
+            display: grid;
             grid-template-rows: repeat(2, 150px);
             grid-template-columns: repeat(2, 150px);
             grid-gap: 20px;
             margin: 30px auto 0 auto;
+
+
+            /* margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,150px);
+    grid-template-rows: repeat(2,150px);
+    grid-gap: 20px; */
         }   
     }
     .rectangle{
