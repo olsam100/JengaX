@@ -170,7 +170,8 @@ const NavStyles = styled.nav`
     .hamburger{
         display: block;
         height: 48px;
-        width: 48px;
+        /* width: 48px; */
+        width: 30%;
     }
     .logo-container{
             width: 100%;
@@ -185,7 +186,9 @@ const NavStyles = styled.nav`
     }
     @media (max-width: 480px){
         .brandlogo{
-            margin-left: 30px;
+            /* margin-left: 30px; */
+            width: 70%;
+            margin: 0 auto;
         }
     }
     .brandlogo{
