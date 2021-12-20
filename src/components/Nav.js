@@ -118,9 +118,9 @@ const NavStyles = styled.nav`
         font-weight: 500;
         font-style: normal;
         font-size: 15px;
-        /* padding-bottom: 8px; */
+        padding-bottom: 3px;
         color: #03060B;
-        /* border-bottom: 3px solid transparent; */
+        border-bottom: 3px solid transparent;
 
     }
 
@@ -199,6 +199,10 @@ const NavStyles = styled.nav`
         font-style: normal;
         /* padding-left: 30px; */
     }
+    .active{
+        border-bottom: 3px solid #03060B;
+    }
+    
   
          
 `;
@@ -225,13 +229,13 @@ const toggleItem = () => setShowItem(!showItem)
                     <div className={`menu ${showItem ? "showItem" : ''}`}>
                         <ul>
                             <li>
-                                <Link to="/" >Home</Link>
+                                <Link to="/" activeClassName='active'>Home</Link>
                             </li>
                             <li>
-                                <Link to="/ideas" className="link">Ideas</Link>
+                                <Link to="/ideas" activeClassName='active'>Ideas</Link>
                             </li>
                             <li>
-                                <Link to="/venture" className="link" >Venture</Link>
+                                <Link to="/venture"  activeClassName='active' >Venture</Link>
                             </li>
                             
                             <li>
