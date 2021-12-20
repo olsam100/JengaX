@@ -25,7 +25,7 @@ const ButtonGroupStyles = styled.div`
         margin: 0 auto;
         padding-left: 165px;
         width: 100%;
-        padding-top: 80px;
+        /* padding-top: 80px; */
         max-width: 1224px;
     }
 

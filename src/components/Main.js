@@ -13,9 +13,9 @@ const MainStyles = styled.main`
         margin: 0 auto;
     }
     @media (min-width: 320px) and (max-width: 480px){
-        padding-top: 0px;
+        /* padding-top: 30px; */
         width: 80%;
-        margin: 0 auto;
+        margin: 50px auto 0 auto;
     }
     
     .idea-text{

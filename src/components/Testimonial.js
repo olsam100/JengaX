@@ -101,12 +101,9 @@ const TestimonialStyles = styled.div`
     }
     @media (min-width: 320px) and (max-width: 480px){
         .group214{
-            grid-template-rows: repeat(2, 100px);
-            grid-template-columns: repeat(2, 100px);
-            /* grid-row-gap: 34px; */
-            /* grid-column-gap: 20px; */
+            grid-template-rows: repeat(2, 120px);
+            grid-template-columns: repeat(2, 120px);
             grid-gap: 20px;
-            justify-content: space-between;
             margin-top: 30px;
         }   
     }

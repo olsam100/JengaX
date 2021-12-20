@@ -74,6 +74,7 @@ const NavStyles = styled.nav`
     }
     .showItem{            
             display: flex;
+            margin-top: 30px;
     }
     @media (min-width: 480px){
 
@@ -169,18 +170,21 @@ const NavStyles = styled.nav`
     }
     .hamburger{
         display: block;
-        height: 48px;
-        /* width: 48px; */
-        width: 30%;
+        margin-top: 12px;
+        height: auto;
     }
     .logo-container{
-            width: 100%;
+            width: 80%;
             height: 100%;
             display: flex;
         }
     @media (min-width: 480px){
         .hamburger{
             display: none;
+            font-size: 30px;
+            left: 0;
+            right: 0;
+
         }
        
     }
@@ -189,6 +193,7 @@ const NavStyles = styled.nav`
             /* margin-left: 30px; */
             width: 70%;
             margin: 0 auto;
+            text-align: center;
         }
     }
     .brandlogo{
@@ -201,6 +206,35 @@ const NavStyles = styled.nav`
     }
     .active{
         border-bottom: 3px solid #03060B;
+    }
+    .bars{
+        height: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        margin-top: 8px;
+        margin-right: 15px;
+        transition: transform 300ms; 
+        transform: ${({showItem}) => showItem ? 'translateX(0)' : 'translateX(100%)'};
+    }
+    .span{
+        width: 25px;
+        height: 2px;
+        background-color: #000;
+        transform-origin: 1px;
+        border-radius: 5px; 
+        position: relative ;
+
+    }
+    .span:first-child{
+        transform: ${({showItem}) => showItem ? 'rotate(45deg)' : 'rotate(0)'};
+    }
+    .span:nth-child(2){
+        opacity: ${({showItem}) => showItem ? '0' : '1'};
+    }
+    .span:nth-child(3){
+        transform: ${({showItem}) => showItem ? 'rotate(-45deg)' : 'rotate(0)'};
     }
     
   
@@ -220,9 +254,21 @@ const toggleItem = () => setShowItem(!showItem)
         <div className="nav-top" >
 
                 <div className="logo-container">
-                    <div className='hamburger' onClick={toggleItem}>{<FaBars style={{width: '100%', height: '100%'}}/>}</div>
-                    
                     <Link to="/" className="brandlogo">JengaX</Link>
+                    {/* <div className='hamburger' onClick={toggleItem}>{<FaBars size="30px" style={{}}/>}</div> */}
+                    <div toggleItem={toggleItem } className='hamburger' onClick={toggleItem}>{
+                        <div className='bars'>
+                            <div className='span'/>
+                            <div className='span'/>
+                            <div className='span'/>
+                        </div>
+
+                    }</div>
+                    
+                    
+                   {/* 
+                   width: '100%', height: '100%'
+                   */}
                 </div>
                 <div className='nav-links'>
                     
