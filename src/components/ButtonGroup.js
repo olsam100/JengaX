@@ -2,16 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 const ButtonGroupStyles = styled.div`
-    width: 100%;
-    margin: 0 auto;
-    padding-left: 165px;
-    width: 100%;
-    padding-top: 80px;
-    max-width: 1224px;
-    @media (min-width: 769px) and (max-width: 1200px){
-        margin: 0 auto;
+    @media (max-width: 480px){
+        margin: 50px auto 0 auto;
         width: 80%;
         padding-left: 0;
+        display: flex;
+        padding-top: 20px;
     }
     @media (min-width: 481px) and (max-width: 768px){
         margin: 0 auto;
@@ -19,12 +15,18 @@ const ButtonGroupStyles = styled.div`
         padding-left: 0;
         display: flex;
     }
-    @media (min-width: 320px) and (max-width: 480px){
-        margin: 50px auto 0 auto;
+    @media (min-width: 769px) and (max-width: 1024px){
+        margin: 0 auto;
         width: 80%;
         padding-left: 0;
-        display: flex;
-        /* padding-top: 20px; */
+    }
+    @media (min-width: 1024px){
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 165px;
+        width: 100%;
+        padding-top: 80px;
+        max-width: 1224px;
     }
 
     @media (min-width: 481px) and (max-width: 768px){
