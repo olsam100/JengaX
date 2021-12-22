@@ -9,16 +9,28 @@ const MainStyles = styled.main`
     width: 100%;
     display: flex;
     flex-direction: column;
-    overflow: scroll;
-    height: 2090px;
+    /* max-width: 1440px; */
+    margin: 0 auto;
+    @media (max-width: 1024px){
+      width: 100%;
+    }
+    @media (max-width: 768px){
+      height: auto;
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+      width: 100%;
+      }
+
 `;
 
 function HomePage(){
   return <MainStyles>
-    <GlobalStyles />
-    <Header />
-    <Main />
-    <Footer />
+   
+      <GlobalStyles />
+      <Header />
+      <Main />
+      <Footer />
+    
   </MainStyles>
 }
 

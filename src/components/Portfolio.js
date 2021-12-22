@@ -2,17 +2,40 @@ import React from "react";
 import styled from "styled-components";
 
 const PortfolioStyles = styled.article`
-    width: 85%;
+@media (min-width: 320px) and (max-width: 480px){
+    display: flex;
+    flex-direction: column;
+    /* width: 80%; */
+    margin: 30px auto 0 auto;
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    display: flex;
+    flex-direction: column;
+    /* height: 200px; */
+    margin-top: 400px;
+}
+    
+@media (min-width: 769px) and (max-width: 1024px){
+    width: 96%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    /* height: auto; */
+}
+
+
+@media (min-width: 1024px){
+    max-width: 1224px;
     margin: 0 auto;
     padding-top: 60px;
-    height: 310px;
-    padding-bottom: 100px;
+    /* height: 310px; */
     display: grid;
-    grid-template-columns: 150px 696px;
     grid-template-rows: 150px;
-    grid-column-gap: 371px;
     justify-content: space-between;
-
+    grid-template-columns: 35% 65%;
+}
     .left{
         display: flex;
         align-self: center;
@@ -27,11 +50,44 @@ const PortfolioStyles = styled.article`
         align-self: center;
     }
 
-    .boxes{
-        display: grid;
-        grid-template-columns: repeat(4, 150px);
-        grid-column-gap: 32px;
+    @media (min-width: 320px) and (max-width: 480px){
+        .boxes{ 
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 150px);
+            grid-template-rows: repeat(2, 150px);
+            grid-gap: 20px;
+
+        }
     }
+    @media (min-width: 481px) and (max-width: 768px){
+        .boxes{
+            width: 84%;
+            margin: 0 auto;
+            grid-template-columns: repeat(2, 150px);
+            grid-template-rows: repeat(2, 150px);
+            grid-row-gap: 50px;
+            grid-column-gap: 50px;
+            justify-content: space-between;
+        }
+    }
+    @media (min-width: 769px) and (max-width: 1024px){
+        .boxes{
+            grid-template-columns: repeat(4, 120px);
+            grid-template-rows: 120px;
+            grid-column-gap: 20px;
+        }
+    }
+    @media (min-width: 1024px){
+        .boxes{
+            display: grid;
+            grid-template-columns: repeat(4, 150px);
+            justify-content: space-between;
+        }
+    }
+    
+    
+    
 
     .rectangle{
         background-color: #C4C4C4;

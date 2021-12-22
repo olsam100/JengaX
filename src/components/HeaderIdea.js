@@ -4,23 +4,59 @@ import GlobalStyles from "../styles/GlobalStyles";
 import Nav from "./Nav";
 
 const HeaderIdeaStyles = styled.header`
-    height: 716px;
+    height: 601px;
     width: 100%;
     background-image: linear-gradient(#B2D9FB, #ffffff);
     display: flex;
     flex-direction: column;
+    
+    
 
 .header-items{
     display: flex;
-    padding-top: 120px;
+    flex-direction: column;
+    padding-top: 121px;
 }
+@media (min-width: 769px) and (max-width: 1024px){
+    .header-items{
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px){
+    .header-items{
+        margin: 0 auto;
+        width: 100%;
+        }
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        .header-items{
+            width: 100%;
+            padding-top: 50px;
+        }
+    }
+    
 .group216{
-    width: 578px;
+    max-width: 578px;
     height: 227px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
 }
+@media (min-width: 481px) and (max-width: 768px){
+    .group216{
+        width: 80%;
+        margin: 0 auto;
+        }
+    }
+
+    @media (min-width: 320px) and (max-width: 480px){
+       .group216{
+        width: 80%;
+        margin: 0 auto;
+        }
+    }
+    
 .informative{
     font-size: 36px;
     font-style: normal;
@@ -52,23 +88,53 @@ p{
 .group193{
     padding-top: 40px;
 }
+@media (min-width: 481px) and (max-width: 768px){
+    .group193{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    input{
+        width: 55%;
+    }
+    .btn{
+        width: 35%;
+    }
+}
+
+    @media (min-width: 320px) and (max-width: 480px){
+            .group193{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+    }
+    
 input{
     width: 420px;
     height: 56px;
     border-radius: 6px;
     border: 2px rgba(68, 91, 120, 0.05);
     background-color: #ffffff;
-    
-}
-input[type="email"]::placeholder{
+    font-size: 16px;
     color: #445B78;
     padding-left: 15px;
+}
+@media (min-width: 320px) and (max-width: 480px){
+    input{
+        width: 100%;
+    }
+}
+input::placeholder{
+    color: #445B78;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     font-family: 'Graphik';
 }
-button{
+.btn{
     width: 147px;
     height: 56px;
     border-radius: 6px;
@@ -80,6 +146,14 @@ button{
     font-style: normal;
     font-family: 'Graphik';
 }
+@media (min-width: 320px) and (max-width: 480px){
+    .btn{
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0;
+        border: 0;
+    }
+}
 
 `;
 
@@ -89,19 +163,14 @@ function HeaderIdea(){
                 <Nav />
                 <div className="header-items">
                     <div className="group216">
-                        <p className="informative">Informative ideas to scale your process, team and products</p>
-                        <p className="subscribe">Subscribe to our newsletter to get new content as they drop</p>
+                        <p className="informative">Insights from Builders for Builders</p>
+                        <p className="subscribe">Subscribe to JengaX Ideas for insights to create, sell, manage and scale your startup </p>
                         <div className="group193">
                             <input type="email" placeholder="Enter your email"/>
-                            <button>Subscribe</button>
+                            <button className="btn">Subscribe</button>
                         </div>
                     </div>
-                   
                 </div>
-                
-           
-        
-       
 
     </HeaderIdeaStyles>
 }
