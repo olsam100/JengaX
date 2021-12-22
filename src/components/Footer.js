@@ -246,7 +246,7 @@ const FooterStyles = styled.footer`
     
     @media (min-width: 320px) and (max-width: 480px){
         .logo{
-            max-width: 100%;
+            width: 100%;
             height: 100%;
         }
     }
