@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { Image } from 'react-bootstrap';
-import imageBadge from '../images/image22.svg';
 import VectorStroke from '../images/vectorStroke.svg';
 import '../components/custom.css';
 

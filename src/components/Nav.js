@@ -3,6 +3,8 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 import '../components/custom.css';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import {Image} from 'react-bootstrap';
+import logo from '../images/jengaxLogo.svg';
 
 
 
@@ -40,10 +42,10 @@ const NavStyles = styled.nav`
         width: 86%;
     }
 }
-@media (min-width: 1025px) and (max-width: 1200px){
+@media (min-width: 1025px){
     .nav-top{
-        max-width: 80%;
-        margin: 0 auto;
+        /* max-width: 80%;
+        margin: 0 auto; */
     }
 }
 .nav-top{
@@ -180,6 +182,7 @@ const NavStyles = styled.nav`
             width: 80%;
             height: 100%;
             display: flex;
+            /* align-items: center; */
         }
     @media (min-width: 480px){
         .hamburger{
@@ -200,13 +203,20 @@ const NavStyles = styled.nav`
             padding-left: 20px;
         }
     }
-    .brandlogo{
-        font-size: 48px;
-        color: #000000;
-        font-family: 'BC Kakao';
-        font-weight: 900;
-        font-style: normal;
-        /* padding-left: 30px; */
+    @media (min-width: 1024px){
+        .brandlogo{
+            font-size: 48px;
+            color: #000000;
+            font-family: 'BC Kakao';
+            font-weight: 900;
+            font-style: normal;
+            display: flex;
+            align-items: center;
+            padding-bottom: 0;
+            border-bottom: 0;
+            margin-top: 10px;
+            /* padding-left: 30px; */
+        }
     }
     .active{
         border-bottom: 3px solid #03060B;
@@ -231,6 +241,19 @@ const NavStyles = styled.nav`
         position: relative ;
 
     }
+    @media (min-width: 320px) and (max-width: 480px){
+        .logo{
+            max-width: 100%;
+            height: 100%;
+        }
+    }
+
+    @media (min-width: 1024px){
+        .logo{
+            height: 100%;
+            width: 150px;
+        }
+    }
 
     
   
@@ -251,7 +274,9 @@ const toggleItem = () => setShowItem(!showItem)
         <div className="nav-top" >
 
                 <div className="logo-container">
-                    <Link to="/" className="brandlogo">JengaX</Link>
+                    <Link to="/" className="brandlogo">
+                            <Image src={logo} fluid alt="JengaX logo" className='logo'/>
+                    </Link>
                     <div className='hamburger' onClick={toggleItem}>{!showItem ? <FaBars size="30px"/> : <FaTimes size="30px"/>}</div>
                 </div>
                 <div className='nav-links'>

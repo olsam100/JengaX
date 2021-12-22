@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
+import {Image} from 'react-bootstrap';
+import logo from '../images/jengaxLogo.svg';
 
 const FooterStyles = styled.footer`
     margin: 0 auto;
@@ -8,6 +10,7 @@ const FooterStyles = styled.footer`
     width: 100%;
     max-width: 1224px;
     padding-top: 60px;
+    align-items: center;
     @media (max-width: 1024px){
         width: 100%;
         /* margin: 0 auto; */
@@ -32,6 +35,7 @@ const FooterStyles = styled.footer`
     .right{
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
     @media (min-width: 769px) and (max-width: 1024px){
         .footer-container{
@@ -97,17 +101,23 @@ const FooterStyles = styled.footer`
         }
     }
     ul{
-    width: 320px;
+    /* width: 320px; */
     list-style-type: disc;
     margin-block-start: 0em;
     margin-block-end: 0em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 0px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
     }
     li{
         text-decoration: none;
         list-style: none;
+        display: flex;
+        align-items: center;
     }
     .idea-text{
         padding-left: 60px;
@@ -123,7 +133,8 @@ const FooterStyles = styled.footer`
         font-family: 'BC Kakao';
         font-weight: 900;
         font-style: normal;
-        font-size: 48px;
+        font-size: 36px;
+        /* font-size: 48px; */
         color: #03060B;
     }
     @media (min-width: 320px) and (max-width: 480px){
@@ -204,22 +215,7 @@ const FooterStyles = styled.footer`
         margin-inline-start: 0px;
         margin-inline-end: 0px;
     }
-    @media (min-width: 769px) and (max-width: 1024px){
-        ul{
-            width: 100%;
-            display: flex;
-            margin: 0 auto;
-            justify-content: space-between;
-            padding-bottom: 30px;
-        }
-    }
-    @media (min-width: 481px) and (max-width: 768px){
-        ul{
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-        }
-    }
+    
     @media (min-width: 320px) and (max-width: 480px){
         ul{
             width: 80%;
@@ -231,6 +227,39 @@ const FooterStyles = styled.footer`
             text-align: center;
         }
     }
+    @media (min-width: 481px) and (max-width: 768px){
+        ul{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    @media (min-width: 769px) and (max-width: 1024px){
+        ul{
+            width: 100%;
+            display: flex;
+            margin: 0 auto;
+            justify-content: space-between;
+            padding-bottom: 30px;
+        }
+    }
+    
+    @media (min-width: 320px) and (max-width: 480px){
+        .logo{
+            max-width: 100%;
+            height: 100%;
+        }
+    }
+
+    @media (min-width: 1024px){
+        .logo{
+            height: 100%;
+            width: 80px;
+        }
+    }
+    img{
+        margin-top: 12px;
+    }
 `;
 
 function Footer(){
@@ -239,7 +268,9 @@ function Footer(){
             <div className="left">
                 <ul>
                     <li>
-                        <Link to="/" className="brand-link">JengaX</Link>
+                        <Link to="/" className="brand-link">
+                            <Image src={logo} fluid alt="JengaX logo" className='logo'/>
+                        </Link>
                     </li>
                     <li className="idea-text">
                         <Link to="/ideas" className="ideas-link">Ideas</Link>
