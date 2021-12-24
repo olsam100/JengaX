@@ -39,8 +39,6 @@ const TestimonialStyles = styled.div`
         
     }
     .buttonwrapper{
-        width: 228.12px;
-        height: 33px;
         border-radius: 100px;
         margin-top: 32px;
     }
@@ -64,6 +62,15 @@ const TestimonialStyles = styled.div`
         font-weight: 600;
         border-width: 0px;
         border-style: unset;
+    }
+    button,
+    a.secondary-link,
+    a:hover svg {
+        
+        transition: all 0.4s ease 0s;
+        transform: translateX(7px);
+        /* position: relative; */
+     
     }
     @media (min-width: 320px) and (max-width: 480px){
         button{

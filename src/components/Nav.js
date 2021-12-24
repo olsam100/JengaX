@@ -137,6 +137,7 @@ const NavStyles = styled.nav`
         border-width: 0px;
         border-style: unset;
     }
+    
     @media (min-width: 320px) and (max-width: 480px){
         button{
             display: flex;
@@ -172,6 +173,15 @@ const NavStyles = styled.nav`
         border-color: #11253e;
         border-image: none;
         cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+    }
+    .myButton:hover svg {
+        
+        transition: all 0.4s ease 0s;
+        transform: translateX(7px);
+        position: relative;
+     
     }
     .hamburger{
         display: block;
@@ -256,6 +266,8 @@ const NavStyles = styled.nav`
     }
 
     
+
+    
   
          
 `;
@@ -295,12 +307,12 @@ const toggleItem = () => setShowItem(!showItem)
                             
                             <li>
                                 <button type="button" className="myButton">Get in touch
-                                <span>
-                                    <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <   path fill-rule="evenodd" clip-rule="evenodd" d="M3.29289 5.49995L0 2.20706L1.41421 0.792847L6.12132 5.49995L1.41421 10.2071L0 8.79285L3.29289 5.49995Z" fill="white"/>
-                                    </svg>
+                                    <span>
+                                        <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <   path fill-rule="evenodd" clip-rule="evenodd" d="M3.29289 5.49995L0 2.20706L1.41421 0.792847L6.12132 5.49995L1.41421 10.2071L0 8.79285L3.29289 5.49995Z" fill="white"/>
+                                        </svg>
 
-                                </span>
+                                    </span>
                                 </button>
                             </li>
                         </ul>

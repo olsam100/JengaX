@@ -247,6 +247,14 @@ const CollectionsStyles = styled.div`
         border-width: 0px;
         border-style: unset;
     }
+    button,
+    a.secondary:hover svg {
+        
+        transition: all 0.4s ease 0s;
+        transform: translateX(7px);
+        position: relative;
+     
+    }
     @media (min-width: 320px) and (max-width: 480px){
         button{
             justify-content: center;
