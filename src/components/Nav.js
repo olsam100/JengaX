@@ -296,7 +296,7 @@ const toggleItem = () => setShowItem(!showItem)
                     <div className={`menu ${showItem ? "showItem" : ''}`}>
                         <ul>
                             <li>
-                                <Link to="/" activeClassName='active'>Home</Link>
+                                <Link to="/" activeClassName='active' exact>Home</Link>
                             </li>
                             <li>
                                 <Link to="/ideas" activeClassName='active'>Ideas</Link>

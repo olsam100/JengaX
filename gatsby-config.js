@@ -1,3 +1,7 @@
+// import dotenv from 'dotenv';
+ 
+// dotenv.config({ path: '.env'});
+
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
@@ -15,6 +19,15 @@ module.exports = {
         path: "./src/images/",
       },
       __key: "images",
+    },
+    {
+      resolve: "gatsby-source-sanity",
+      options: {
+        projectId: "k9t0jgsg",
+        dataset: "production",
+        watchMode: true,
+        // token: process.env.SANITY_TOKEN
+      },
     },
   ],
 };

@@ -66,11 +66,8 @@ const TestimonialStyles = styled.div`
     button,
     a.secondary-link,
     a:hover svg {
-        
         transition: all 0.4s ease 0s;
         transform: translateX(7px);
-        /* position: relative; */
-     
     }
     @media (min-width: 320px) and (max-width: 480px){
         button{
@@ -88,7 +85,6 @@ const TestimonialStyles = styled.div`
         display: grid;
         grid-template-columns: repeat(4, 150px);
         grid-template-rows: 150px;
-        /* justify-content: space-between; */
         grid-column-gap: 68px;
     }
     @media (min-width: 769px) and (max-width: 1024px){
