@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
+
 
 const ButtonGroupStyles = styled.div`
     @media (max-width: 480px){
@@ -107,15 +109,57 @@ const ButtonGroupStyles = styled.div`
     }
 `;
 
+// function countCategories(categories, category){
+//     const counts = categories
+//     .map(category => category.categories)
+//     .flat()
+//     .reduce((acc, cat) => {
+//          const existingCategory = acc[category.id];
+//         if (existingCategory){
+//             existingCategory.count += 1
+//         }else{
+//              acc[category.id] = {
+//                  id: category.id,
+//                  name: category.name,
+//                  count: 1
+//             }
+//         }
+//         return acc; 
+//     }, {})
+//     const sortedCategories = Object.values(counts).sort((a, b) =>{
+//         b.count - a.count
+//     })
+//     return sortedCategories; 
+//     ;
+// }
+
 function ButtonGroup(){
+    
+//     console.log(categories);
+// const groupCount = countCategories(categories.nodes);
+// console.log(groupCount);
+// {groupCount.map(category =>{
+     
+// })}
     return <ButtonGroupStyles>
+        
         <div className="group111">
-            <button className="all btn">All</button>
-            <button className="product btn">Product Updates</button>
-            <button className="marketing btn">Marketing</button>
-            <button className="company btn">Company</button>
-            <button className="engineering btn">Engineering</button>
+            <Link><button className="all btn">All</button></Link>
+            <Link><button className="product btn">Product Updates</button></Link>
+            <Link><button className="marketing btn">Marketing</button></Link>
+            <Link><button className="company btn">Company</button></Link>
+            <Link><button className="engineering btn">Engineering</button></Link>
         </div>
+
+        {/* <div className="group111">
+            <ul>
+                <Link>{data.categories.nodes.map((node) =>{
+                        <li key={node.slug.content}></li>
+
+                    })}
+                </Link>
+            </ul>
+        </div> */}
     </ButtonGroupStyles>
 }
 

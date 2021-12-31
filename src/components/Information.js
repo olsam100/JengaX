@@ -1,8 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { Image } from 'react-bootstrap';
+// import { Image } from 'react-bootstrap';
 import VectorStroke from '../images/vectorStroke.svg';
 import '../components/custom.css';
+import { useStaticQuery, graphql } from 'gatsby';
+import Image from 'gatsby-image';
 
 
 const MainStyles = styled.main`
@@ -74,10 +76,6 @@ const MainStyles = styled.main`
     .group217{
  
     }
-    
-
-    
-   
         .detailedGroup{
             width: 100%;
         }
@@ -98,8 +96,6 @@ const MainStyles = styled.main`
         justify-content: space-between;
    }
 }
-
-    
 
     .groups{
         height: 163px;
@@ -382,13 +378,52 @@ const MainStyles = styled.main`
         height: 100%;
         border-radius: 10px;
     }
-    
 `;
 
-function Information(){
+// const Information = ({data}) => {
+
+// }
+function Information(data){
+    const query = useStaticQuery(graphql`
+        {
+            allSanityCategory {
+                edges {
+                    node {
+                        _id
+                        _type
+                        name
+                        slug {
+                        current
+                        }
+                        image {
+                        asset {
+                            gatsbyImageData
+                        }
+                        }
+                    }
+                }
+            }
+        }
+    `);
+    
     return <MainStyles>
         <div className="group217">
-            <div className="detailedGroup">
+            <ul>
+                {data.allSanityCategory.edges.map(({node: project}) => {
+                    <div className="offline" key={project.slug.current}>
+                        <button>{project.name}</button>
+                    </div>
+                })}
+
+            </ul>
+                            {/* <div className="detailedgroup">
+                    <div className="groups">
+                        
+
+
+                    </div>
+                </div> */}
+            {/* <div className="detailedGroup">
                 <div className="groups">
                     <div className="image-card">
 
@@ -407,8 +442,8 @@ function Information(){
                     </div>
                 </div>
                 <div className="line"></div>
-            </div>
-            <div className="detailedGroup">
+            </div> */}
+            {/* <div className="detailedGroup">
                 <div className="groups">
                     <div className="image-card">
 
@@ -427,8 +462,8 @@ function Information(){
                     </div>
                 </div>
                 <div className="line"></div>
-            </div>
-            <div className="detailedGroup">
+            </div> */}
+            {/* <div className="detailedGroup">
                 <div className="groups">
                     <div className="image-card">
 
@@ -447,8 +482,8 @@ function Information(){
                     </div>
                 </div>
                 <div className="line"></div>
-            </div>
-            <div className="detailedGroup">
+            </div> */}
+            {/* <div className="detailedGroup">
                 <div className="groups">
                     <div className="image-card">
 
@@ -467,8 +502,8 @@ function Information(){
                     </div>
                 </div>
                 <div className="line"></div>
-            </div>
-            <div className="detailedGroup">
+            </div> */}
+            {/* <div className="detailedGroup">
                 <div className="groups">
                     <div className="image-card">
 
@@ -487,7 +522,9 @@ function Information(){
                     </div>
                 </div>
                 <div className="line"></div>
-            </div>
+            </div> */}
+
+            
         </div>
     </MainStyles>
 }

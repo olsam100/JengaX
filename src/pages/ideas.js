@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Footer from '../components/Footer';
 import ButtonGroup from '../components/ButtonGroup';
 import Information from '../components/Information';
+import { graphql } from 'gatsby';
 
 
 const MainStyles = styled.main`
@@ -18,7 +19,38 @@ const FooterStyles = {
     marginTop: '100px'
 }
 
-function Ideas(){
+export const query = graphql`
+    query{
+        posts:  allSanityPost {
+                nodes {
+                    name
+                    id
+                    slug {
+                        current
+                        }
+                    postTitle
+                    description
+                    category {
+                        id
+                        name
+                        slug {
+                            current
+                        }
+                    image {
+                        asset {
+                            gatsbyImageData
+                        }
+                    }
+                    }
+                }
+    }
+    }
+ `;
+// gatsbyImageData
+// ...GatsbySanityImageFluid
+
+
+function Ideas(props){
     return <MainStyles>
     <HeaderIdea />
     <ButtonGroup />
@@ -28,3 +60,4 @@ function Ideas(){
   }
   
   export default Ideas;
+
