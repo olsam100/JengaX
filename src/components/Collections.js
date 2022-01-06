@@ -324,7 +324,9 @@ function Collections(){
             <div className="share-collection">
                 <div className="group group-206">
                     <div className="group201">
-                        <div className="heading1">Launch</div>
+                        <div className="heading1">
+                            <Link to="/launch">Launch</Link>
+                        </div>
                         <div className="heading-text">
                             <h3>Building your API</h3>
                             <p className="text">The rise of RESFUL APIs has been met by a rise in tools for reating, testing, and mana...</p>

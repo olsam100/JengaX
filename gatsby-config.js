@@ -20,14 +20,14 @@ module.exports = {
       },
       __key: "images",
     },
-    {
-      resolve: "gatsby-source-sanity",
-      options: {
-        projectId: "k9t0jgsg",
-        dataset: "production",
-        watchMode: true,
-        // token: process.env.SANITY_TOKEN
-      },
-    },
+    // {
+    //   resolve: "gatsby-source-sanity",
+    //   options: {
+    //     projectId: "k9t0jgsg",
+    //     dataset: "production",
+    //     watchMode: true,
+    //     token: process.env.SANITY_TOKEN
+    //   },
+    // },
   ],
 };
