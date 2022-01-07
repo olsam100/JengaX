@@ -96,12 +96,21 @@ const HeaderStyles = styled.header`
         padding: 0 20px;
     }
 }
-.imagebox{
-    max-width: 922px;
+
+@media (min-width: 320px) and (max-width: 480px){
+    .imagebox{
+        width: 100%;
+        padding-top: 30px;
+    }
 }
 @media (min-width: 769px) and (max-width: 1024px){
     .imagebox{
         width: 100%;
+    }
+}
+@media (min-width: 1025px){
+    .imagebox{
+    max-width: 922px;
     }
 }
 

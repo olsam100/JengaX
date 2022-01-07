@@ -296,7 +296,7 @@ const toggleItem = () => setShowItem(!showItem)
                     <div className={`menu ${showItem ? "showItem" : ''}`}>
                         <ul>
                             <li>
-                                <Link to="/" activeClassName='active' exact>Home</Link>
+                                <Link to="/" activeClassName='active' exact="true">Home</Link>
                             </li>
                             <li>
                                 <Link to="/ideas" activeClassName='active'>Ideas</Link>
@@ -309,7 +309,7 @@ const toggleItem = () => setShowItem(!showItem)
                                 <button type="button" className="myButton">Get in touch
                                     <span>
                                         <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <   path fill-rule="evenodd" clip-rule="evenodd" d="M3.29289 5.49995L0 2.20706L1.41421 0.792847L6.12132 5.49995L1.41421 10.2071L0 8.79285L3.29289 5.49995Z" fill="white"/>
+                                        <   path fillRule="evenodd" clipRule="evenodd" d="M3.29289 5.49995L0 2.20706L1.41421 0.792847L6.12132 5.49995L1.41421 10.2071L0 8.79285L3.29289 5.49995Z" fill="white"/>
                                         </svg>
 
                                     </span>

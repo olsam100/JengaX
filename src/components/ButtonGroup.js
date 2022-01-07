@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link, useStaticQuery } from 'gatsby';
+import { graphql } from 'gatsby';
+
 
 const ButtonGroupStyles = styled.div`
     @media (max-width: 480px){
@@ -68,10 +71,18 @@ const ButtonGroupStyles = styled.div`
     }
     
     .all{
-        width: 49px;
+        /* width: 49px;
         background-color: #1f2354;
         color: #ffffff;
+        font-weight: 500; */
+
+        width: auto;
+        background-color: #ffffff;
+        border: 1px solid rgba(125, 128, 159, 1);
+        color: rgba(125, 128, 159, 1);
         font-weight: 500;
+        margin-left: 11px;
+        padding: 0 10px;
     }
     .product{
         width: 127px;
@@ -105,18 +116,45 @@ const ButtonGroupStyles = styled.div`
         font-weight: 500;
         margin-left: 11px;
     }
+    ul{
+        display: flex;
+    }
+    li{
+        list-style: none;
+    }
+    
 `;
 
-function ButtonGroup(){
-    return <ButtonGroupStyles>
+
+function ButtonGroup(props){
+    const buttons = useStaticQuery(graphql`
+        query {
+            allSanityCategory  {
+                nodes {
+                    id
+                    title
+                } 
+            }
+        }
+    `);
+    return (
+        <ButtonGroupStyles>
+        
         <div className="group111">
-            <button className="all btn">All</button>
-            <button className="product btn">Product Updates</button>
-            <button className="marketing btn">Marketing</button>
-            <button className="company btn">Company</button>
-            <button className="engineering btn">Engineering</button>
+            <ul>
+                {buttons.allSanityCategory.nodes.map(post => <li key={post.id}>
+                    <div className="group111">
+                        <Link to={post.title.toLowerCase()}><button className="all btn">{post.title}</button></Link>
+                        
+                    </div>
+                    
+                </li>)}
+            </ul>
+
         </div>
-    </ButtonGroupStyles>
+
+        </ButtonGroupStyles>
+    )
 }
 
 export default ButtonGroup;

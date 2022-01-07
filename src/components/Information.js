@@ -1,16 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-import { Image } from 'react-bootstrap';
+// import { Image } from 'react-bootstrap';
 import VectorStroke from '../images/vectorStroke.svg';
 import '../components/custom.css';
+import { useStaticQuery, graphql, Link } from 'gatsby';
+import Image from 'gatsby-image';
+import {GatsbyImage} from 'gatsby-plugin-image'
 
 
 const MainStyles = styled.main`
    
-    /* height: 1155px; */
-    /* padding-left: 266px; */
-    
-    
     @media (min-width: 320px) and (max-width: 480px){
         width: 100%;
         height: auto;
@@ -74,10 +73,6 @@ const MainStyles = styled.main`
     .group217{
  
     }
-    
-
-    
-   
         .detailedGroup{
             width: 100%;
         }
@@ -98,8 +93,6 @@ const MainStyles = styled.main`
         justify-content: space-between;
    }
 }
-
-    
 
     .groups{
         height: 163px;
@@ -382,114 +375,74 @@ const MainStyles = styled.main`
         height: 100%;
         border-radius: 10px;
     }
-    
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+    li{
+        list-style: none;
+    }
+    .stroke{
+        width: inherit;
+        height: inherit;
+    }
 `;
 
-function Information(){
-    return <MainStyles>
-        <div className="group217">
-            <div className="detailedGroup">
-                <div className="groups">
-                    <div className="image-card">
-
-                    </div>
-                    <div className="offline">
-                        <div className="one"><p>October 21, 2021</p></div>
-                        <div className="two">
-                            <button type="button" className="secondary">Marketing</button>
+function Information(props){
+    const data = useStaticQuery(graphql`
+        query PostQuery{
+            allSanityPost {
+                nodes {
+                    id
+                    heading
+                    description
+                    title
+                    slug {
+                        current
+                    }
+                    releaseDate(formatString: "MMMM DD, YYYY")
+                    mainImage {
+                            asset {
+                                gatsbyImageData
+                            }
+                    }
+                }
+            }
+     }
+`);
+return (
+    <MainStyles>
+        <ul>          
+            {data.allSanityPost.nodes.map(post => <li key={post.id}>
+                <div className="group217">
+                    <div className="detailedGroup">
+                        <div className="groups">
+                                    <GatsbyImage image={post.mainImage.asset.gatsbyImageData}/>
+                                    <div className="offline">
+                                        <div className="one">{post.releaseDate}</div>
+                                        <div className="two">
+                                            <button type="button" className="secondary">{post.heading}</button>
+                                        </div>
+                                        <div className="three">
+                                            <p className="making">{post.title}</p>
+                                        </div>
+                                        <div className="four">
+                                            <p className="Africa">{post.description}
+                                            <Link to={post.slug.current}>
+                                                <button type="button" className="read-more">Read more <i><Image src={VectorStroke} fluid="true" className="stroke"/></i></button>
+                                            </Link>
+                                            </p>
+                                        </div>
+                                    </div>
                         </div>
-                        <div className="three">
-                            <p className="making">Making Mobile offline data</p>
-                        </div>
-                        <div className="four">
-                            <p className="Africa">Africa has a diverse population of 1.2bn people. According to GSMA, Africa has a diverse population of 1.2bn people. <button type="button" className="read-more">Read more <i><Image src={VectorStroke} fluid className="stroke"/></i></button></p>
-                        </div>
-                    </div>
+                        <div className="line"></div>
+                    </div>   
                 </div>
-                <div className="line"></div>
-            </div>
-            <div className="detailedGroup">
-                <div className="groups">
-                    <div className="image-card">
+            </li>)}
+        </ul>
 
-                    </div>
-                    <div className="offline">
-                        <div className="one"><p>October 21, 2021</p></div>
-                        <div className="two">
-                            <button type="button" className="secondary">Marketing</button>
-                        </div>
-                        <div className="three">
-                            <p className="making">Making Mobile offline data</p>
-                        </div>
-                        <div className="four">
-                            <p className="Africa">Africa has a diverse population of 1.2bn people. According to GSMA, Africa has a diverse population of 1.2bn people. <button type="button" className="read-more">Read more <i><Image src={VectorStroke} fluid className="stroke"/></i></button></p>
-                        </div>
-                    </div>
-                </div>
-                <div className="line"></div>
-            </div>
-            <div className="detailedGroup">
-                <div className="groups">
-                    <div className="image-card">
-
-                    </div>
-                    <div className="offline">
-                        <div className="one"><p>October 21, 2021</p></div>
-                        <div className="two">
-                            <button type="button" className="secondary">Marketing</button>
-                        </div>
-                        <div className="three">
-                            <p className="making">Making Mobile offline data</p>
-                        </div>
-                        <div className="four">
-                            <p className="Africa">Africa has a diverse population of 1.2bn people. According to GSMA, Africa has a diverse population of 1.2bn people. <button type="button" className="read-more">Read more <i><Image src={VectorStroke} fluid className="stroke"/></i></button></p>
-                        </div>
-                    </div>
-                </div>
-                <div className="line"></div>
-            </div>
-            <div className="detailedGroup">
-                <div className="groups">
-                    <div className="image-card">
-
-                    </div>
-                    <div className="offline">
-                        <div className="one"><p>October 21, 2021</p></div>
-                        <div className="two">
-                            <button type="button" className="secondary">Marketing</button>
-                        </div>
-                        <div className="three">
-                            <p className="making">Making Mobile offline data</p>
-                        </div>
-                        <div className="four">
-                            <p className="Africa">Africa has a diverse population of 1.2bn people. According to GSMA, Africa has a diverse population of 1.2bn people. <button type="button" className="read-more">Read more <i><Image src={VectorStroke} fluid className="stroke"/></i></button></p>
-                        </div>
-                    </div>
-                </div>
-                <div className="line"></div>
-            </div>
-            <div className="detailedGroup">
-                <div className="groups">
-                    <div className="image-card">
-
-                    </div>
-                    <div className="offline">
-                        <div className="one"><p>October 21, 2021</p></div>
-                        <div className="two">
-                            <button type="button" className="secondary">Marketing</button>
-                        </div>
-                        <div className="three">
-                            <p className="making">Making Mobile offline data</p>
-                        </div>
-                        <div className="four">
-                            <p className="Africa">Africa has a diverse population of 1.2bn people. According to GSMA, Africa has a diverse population of 1.2bn people. <button type="button" className="read-more">Read more <i><Image src={VectorStroke} fluid className="stroke" /></i></button></p>
-                        </div>
-                    </div>
-                </div>
-                <div className="line"></div>
-            </div>
-        </div>
     </MainStyles>
-}
+)
 
+}
 export default Information;

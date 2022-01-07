@@ -18,7 +18,7 @@ const FooterStyles = {
     marginTop: '100px'
 }
 
-function Ideas(){
+function Ideas(props){
     return <MainStyles>
     <HeaderIdea />
     <ButtonGroup />
@@ -28,3 +28,4 @@ function Ideas(){
   }
   
   export default Ideas;
+
