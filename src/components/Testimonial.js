@@ -81,32 +81,13 @@ const TestimonialStyles = styled.div`
 
         }
     }
-    .group214{
-        display: grid;
-        grid-template-columns: repeat(4, 150px);
-        grid-template-rows: 150px;
-        grid-column-gap: 68px;
-    }
-    @media (min-width: 769px) and (max-width: 1024px){
-        .group214{
-            margin: 0 auto;
-            padding-top: 50px;
-        }
-    }
-    @media (min-width: 481px) and (max-width: 768px){
-        .group214{
-            width: 100%;
-            grid-template-columns: repeat(4, 100px);
-            grid-template-rows: 100px;
-            justify-content: space-between;
-            padding-top: 50px;
-        }
-    }
+    
     @media (min-width: 320px) and (max-width: 480px){
         .group214{
             display: grid;
             grid-template-rows: repeat(2, 150px);
             grid-template-columns: repeat(2, 150px);
+            /* grid-template-columns: repeat(2, 150px); */
             grid-gap: 20px;
             margin: 30px auto 0 auto;
 
@@ -118,6 +99,30 @@ const TestimonialStyles = styled.div`
     grid-gap: 20px; */
         }   
     }
+    @media (min-width: 481px) and (max-width: 768px){
+        .group214{
+            width: 100%;
+            grid-template-columns: repeat(4, 100px);
+            grid-template-rows: 100px;
+            justify-content: space-between;
+            padding-top: 50px;
+        }
+    }
+    @media (min-width: 769px) and (max-width: 1024px){
+        .group214{
+            margin: 0 auto;
+            padding-top: 50px;
+        }
+    }
+    @media (min-width: 1025px){
+        .group214{
+            display: grid;
+            grid-template-columns: repeat(4, 150px);
+            grid-template-rows: 150px;
+            grid-column-gap: 68px;
+        }
+    }
+    
     .rectangle{
         background-color: #C4C4C4;
     }
@@ -148,7 +153,7 @@ const TestimonialStyles = styled.div`
             width: 100%;
             /* margin: 0 auto; */
             /* margin-right: 20px; */
-            margin-left: 20px;
+            /* margin-left: 20px; */
         }   
     }
     
@@ -166,7 +171,7 @@ function Testimonial(){
                         <Link to="/venture">Learn more about our ventures
                             <span>
                                 <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.29289 5.50001L0 2.20712L1.41421 0.792908L6.12132 5.50001L1.41421 10.2071L0 8.79291L3.29289 5.50001Z" fill="#5974AA"/>
+                                    <path fillRule="evenodd" clipRule="evenodd" d="M3.29289 5.50001L0 2.20712L1.41421 0.792908L6.12132 5.50001L1.41421 10.2071L0 8.79291L3.29289 5.50001Z" fill="#5974AA"/>
                                 </svg>
                             </span>
                         </Link>

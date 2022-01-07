@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'gatsby';
+import { Link, useStaticQuery } from 'gatsby';
+import { graphql } from 'gatsby';
 
 
 const ButtonGroupStyles = styled.div`
@@ -70,10 +71,18 @@ const ButtonGroupStyles = styled.div`
     }
     
     .all{
-        width: 49px;
+        /* width: 49px;
         background-color: #1f2354;
         color: #ffffff;
+        font-weight: 500; */
+
+        width: auto;
+        background-color: #ffffff;
+        border: 1px solid rgba(125, 128, 159, 1);
+        color: rgba(125, 128, 159, 1);
         font-weight: 500;
+        margin-left: 11px;
+        padding: 0 10px;
     }
     .product{
         width: 127px;
@@ -107,60 +116,45 @@ const ButtonGroupStyles = styled.div`
         font-weight: 500;
         margin-left: 11px;
     }
+    ul{
+        display: flex;
+    }
+    li{
+        list-style: none;
+    }
+    
 `;
 
-// function countCategories(categories, category){
-//     const counts = categories
-//     .map(category => category.categories)
-//     .flat()
-//     .reduce((acc, cat) => {
-//          const existingCategory = acc[category.id];
-//         if (existingCategory){
-//             existingCategory.count += 1
-//         }else{
-//              acc[category.id] = {
-//                  id: category.id,
-//                  name: category.name,
-//                  count: 1
-//             }
-//         }
-//         return acc; 
-//     }, {})
-//     const sortedCategories = Object.values(counts).sort((a, b) =>{
-//         b.count - a.count
-//     })
-//     return sortedCategories; 
-//     ;
-// }
 
-function ButtonGroup(){
-    
-//     console.log(categories);
-// const groupCount = countCategories(categories.nodes);
-// console.log(groupCount);
-// {groupCount.map(category =>{
-     
-// })}
-    return <ButtonGroupStyles>
+function ButtonGroup(props){
+    const buttons = useStaticQuery(graphql`
+        query {
+            allSanityCategory  {
+                nodes {
+                    id
+                    title
+                } 
+            }
+        }
+    `);
+    return (
+        <ButtonGroupStyles>
         
         <div className="group111">
-            <Link><button className="all btn">All</button></Link>
-            <Link><button className="product btn">Product Updates</button></Link>
-            <Link><button className="marketing btn">Marketing</button></Link>
-            <Link><button className="company btn">Company</button></Link>
-            <Link><button className="engineering btn">Engineering</button></Link>
+            <ul>
+                {buttons.allSanityCategory.nodes.map(post => <li key={post.id}>
+                    <div className="group111">
+                        <Link to={post.title.toLowerCase()}><button className="all btn">{post.title}</button></Link>
+                        
+                    </div>
+                    
+                </li>)}
+            </ul>
+
         </div>
 
-        {/* <div className="group111">
-            <ul>
-                <Link>{data.categories.nodes.map((node) =>{
-                        <li key={node.slug.content}></li>
-
-                    })}
-                </Link>
-            </ul>
-        </div> */}
-    </ButtonGroupStyles>
+        </ButtonGroupStyles>
+    )
 }
 
 export default ButtonGroup;

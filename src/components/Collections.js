@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from 'gatsby';
+import { Link, useStaticQuery, graphql } from 'gatsby';
 
 const CollectionsStyles = styled.div`
     @media (min-width: 769px) and (max-width: 1024px){
@@ -301,7 +301,36 @@ const CollectionsStyles = styled.div`
     }
 `;
 
-function Collections(){
+function Collections(props){
+    const data = useStaticQuery(graphql`
+        {
+            allSanityAction {
+            nodes {
+            id
+            title
+            heading
+            designation
+            description
+            jobDetails
+            quote
+            quoter
+            slug {
+                current
+            }
+            otherTitle
+            otherResources
+            otherInformation
+            imageDescription
+            mainImage {
+                asset {
+                gatsbyImageData
+                }
+            }
+            }
+        }
+}
+
+    `);
     return <CollectionsStyles>
         <section>
             <div className="share-idea">
@@ -313,7 +342,7 @@ function Collections(){
                         <Link to="/ideas" className="secondary">Learn more of our ideas
                             <span>
                                 <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.29289 5.50001L0 2.20712L1.41421 0.792908L6.12132 5.50001L1.41421 10.2071L0 8.79291L3.29289 5.50001Z" fill="#5974AA"/>
+                                    <path fillRule="evenodd" clipRule="evenodd" d="M3.29289 5.50001L0 2.20712L1.41421 0.792908L6.12132 5.50001L1.41421 10.2071L0 8.79291L3.29289 5.50001Z" fill="#5974AA"/>
                                 </svg>
                             </span>
                         </Link>
@@ -322,7 +351,34 @@ function Collections(){
             </div>
 
             <div className="share-collection">
-                <div className="group group-206">
+                <ul>
+                    {data.allSanityAction.nodes.map(post => <li key={post.id}>
+                        <div className="group group-207">
+                            <div className="group201">
+                                <div className="heading1">{post.title}</div>
+                                <div className="heading-text">
+                                    <h3>{post.heading}</h3>
+                                    <p className="text">The rise of RESFUL APIs has been met by a rise in tools for reating, testing, and mana...</p>
+                                </div>
+                            </div>
+                            {/* <div className="group202">
+                                <div className="heading4">Create</div>
+                                <div className="heading-text">
+                                    <h3>Building lessons</h3>
+                                    <p className="text">The rise of RESFUL APIs has been met by a rise in tools for reating, testing...</p>
+                                </div>
+                            </div>
+                            <div className="group203">
+                                <div className="heading5">Sell</div>
+                                <div className="heading-text">
+                                    <h3>Building your API</h3>
+                                    <p className="text">The rise of RESFUL APIs has been met by a rise in tools for reating, testing, and managing</p>
+                                </div>
+                            </div> */}
+                        </div>
+                    </li>)}
+                </ul>
+                {/* <div className="group group-206">
                     <div className="group201">
                         <div className="heading1">
                             <Link to="/launch">Launch</Link>
@@ -346,10 +402,12 @@ function Collections(){
                             <p className="text">The rise of RESFUL APIs has been met by a rise in tools for reating, testing, and managing</p>
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <div className="group group-207">
                     <div className="group201">
-                        <div className="heading1">Launch</div>
+                        <div className="heading1">
+                            <Link to={props.slug}>Launch</Link>
+                        </div>
                         <div className="heading-text">
                             <h3>Building your API</h3>
                             <p className="text">The rise of RESFUL APIs has been met by a rise in tools for reating, testing, and mana...</p>

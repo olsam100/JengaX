@@ -159,7 +159,9 @@ const QuoteStyle = styled.div`
     }
 `;
 
+
 function QuoteContainer(){
+
     return (
         <QuoteStyle>
             <div className="quotebox"> 
